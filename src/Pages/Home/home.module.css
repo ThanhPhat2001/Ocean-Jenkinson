@@ -1,0 +1,48 @@
+.video {
+    height: 800px;
+    width: 100%;
+}
+.history_title>h1 {
+    color: #007faf;
+}
+.history_title>h1>span {
+    font-weight: 400;
+    font-size: 30px;
+}
+.history_title>h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+.history_content {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.history_more {
+    text-align: center;
+    padding-top: 130px;
+    border-left: 1px solid rgba(198, 196, 196, 0.868);
+    z-index: 10;
+}
+.history_more>a {
+    padding: 10px 20px;
+    border-radius: 5px;
+   background: linear-gradient(
+    270deg,rgba(57,192,196,1) 0%,rgba(18,106,179,1) 100%);
+}
+.history_more>a:hover {
+    box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0.2);
+}
+.history_more>a:hover>a {
+    color: #012f65 !important;
+    -webkit-transition: all 600ms ease 0s;
+}
+
+.history_more>a>a {
+    color: #ffff;
+    font-weight: 500;
+    font-size: 16px;
+}

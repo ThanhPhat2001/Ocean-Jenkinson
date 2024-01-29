@@ -1,0 +1,120 @@
+.footer  {
+    background: linear-gradient(
+    270deg,rgba(57,192,196,1) 0%,rgba(18,106,179,1) 100%);
+    font-family: 'Play', sans-serif;
+    color: white;
+    width: 100%;
+}
+
+.top_footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #acacac;
+}
+.navigation_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation_footer>li:first-child{
+    width: 350px;
+}
+.navigation_footer>li{
+    width: 250px;
+}
+.logo>img {
+    width: 280px;
+    height: 170px;
+}
+.logo .logo_content {
+    width: 300px;
+    line-height: 25px;
+    margin-top: -30px;
+}
+.logo>p {
+    width: 150px;
+    color: #ffffff;
+}
+.logo .icon {
+    display: flex;
+    column-gap: 15px;
+    margin-left: -35px;
+    padding-top: 10px;
+}
+.logo .icon>li {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.13) none repeat scroll 0 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    
+}
+.logo .icon>li>a {
+    color: white !important;
+    line-height: 30px;
+    text-align: center;
+}
+.logo .icon>li:hover>a {
+    color: #012f65!important;
+    -webkit-transition: all 600ms ease 0s;
+}
+
+.logo .icon>li:hover {
+    background-color: white;
+    -webkit-transition: all 600ms ease 0s;
+    
+}
+.navigation_footer>li>div>h6 {
+    font-size: 18px;
+    padding-top: 60px;
+    font-weight: 800;
+    color: #012f65!important;
+}
+.navigation_footer>li>.support>ul {
+    margin-left: -34px;
+    padding-top: 30px;
+}
+.navigation_footer>li>.support>ul>li {
+    line-height: 30px;
+}
+.navigation_footer>li>.support>ul>li>a {
+    color: #ffffff !important;
+}
+.navigation_footer>li>.support>ul>li>a:hover {
+    color:#111589f5 !important;
+    -webkit-transition: all 600ms ease 0s;
+}
+.navigation_footer>li>.contact>ul {
+    margin-left: -34px;
+    padding-top: 30px;
+}
+.navigation_footer>li>.contact>ul>li {
+    line-height: 20px;
+}
+.navigation_footer>li>.contact>ul>li>a {
+    color: #ffffff !important;
+}
+.navigation_footer>li>.contact>ul>li>a:hover {
+    color:#111589f5 !important;
+    -webkit-transition: all 600ms ease 0s;
+}
+.navigation_footer>li>.pay>ul {
+    margin-left: -34px;
+    padding-top: 30px;
+}
+.navigation_footer>li>.pay>ul>li {
+    line-height: 25px;
+    color: #ffffff !important;
+}
+.bottom_footer {
+    justify-content: center;
+    padding: 10px 0px;
+    display: flex;
+}
+.bottom_footer>p {
+    color: #ffffff;
+}
+.bottom_footer>p>a {
+    font-weight: 600;
+    color:#111589f5 !important;
+}

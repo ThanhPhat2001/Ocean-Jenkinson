@@ -1,0 +1,119 @@
+.icon {
+    font-size: 14px;
+    margin-right: 5px;
+    color: black !important;
+}
+.left_top_header>a {
+    color: #012f65 !important;
+}
+.left_top_header>p {
+    color: #ffffff!important;
+}
+.top_header {
+    font-weight: 500;
+    background: linear-gradient(
+    270deg,rgba(57,192,196,1) 0%,rgba(18,106,179,1) 100%);
+    padding-top: 3px;
+    height: 35px;
+       
+}
+
+.top_header {
+    border: 1px solid white;
+    border-bottom: 1px solid rgba(208, 203, 203, 0.842);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_top_header {
+    display: flex;
+    margin-left: 24px;
+}
+
+.right_top_header {
+    display: flex;
+    margin-right: 24px;
+    padding-top: 2px;
+}
+.right_top_header .phone {
+    display: flex;
+    margin-right: 70px;
+    margin-top: -2px;
+}
+.right_top_header .phone>a {
+    color: #012f65 !important;
+}
+.right_top_header .phone>p {
+    color: #ffffff!important;
+}
+.open_daily>a {
+    color: #012f65 !important;
+}
+
+.open_daily>p {
+    color: #ffffff!important;
+    margin-top: -2px;
+}
+.left_bottom_header {
+    margin-left: -50px;
+}
+.logo {
+    width: 290px;
+    height: 100px;
+    
+}
+.bottom_header {
+    font-family: 'Cormorant Garamond', serif;
+}
+.bottom_header .right_bottom_header .login {
+    margin-left: 100px;
+}
+
+.navigation {
+    margin-right: 80px;
+    padding-top: 35px;
+}
+.navigation>ul {
+   column-gap: 15px;
+}
+.navigation>ul>a>a {
+    padding: 0px 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #012f65!important;
+}
+
+.navigation>ul>a>a:hover {
+    color: rgba(57,192,196,1) !important;
+    -webkit-transition: all 600ms ease 0s;
+}
+.login {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 30px;
+    margin-top: 25px;
+    border-left: 1px solid rgba(198, 196, 196, 0.868);
+    height: 50px;
+}
+.login .account {
+    padding-right: 50px;
+    margin-left: 40px;
+    margin-top: -21px;
+}
+.login .account>a {
+    color: #012f65!important;
+}
+.login .account>a:hover
+ {
+    color: rgba(57,192,196,1) !important;
+    -webkit-transition: all 600ms ease 0s;
+}
+.icon_login>ul {
+    display: flex;
+    column-gap: 35px;
+    margin-top: -25px;  
+}
+.icon_login>ul>li>a {
+    color: #012f65!important;
+}
