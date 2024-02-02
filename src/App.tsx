@@ -9,6 +9,7 @@ import NoPage from "./Pages/NoPage";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import History from "./Pages/History";
+import Booking from "./Pages/Booking";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/history" element={<History />} />
+      <Route path="/booking" element={<Booking />} />
       <Route path="*" element={<NoPage />} />
     </Routes>
     <Footer />

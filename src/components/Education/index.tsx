@@ -3,8 +3,10 @@ import { education } from "../../data/education";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-type SingleEducationProps = {
+type EducationType = {
   id: number;
   title: string;
   content: string;
@@ -12,12 +14,14 @@ type SingleEducationProps = {
 };
 
 const SingleEducation = ({
-  education,
+  education
 }: {
-  education: SingleEducationProps;
+  education: EducationType;
 }) => {
+  AOS.init();
   return (
-    <div className={`${styles.education_item} mx-3`}>
+    <div data-aos="fade-up"
+      data-aos-duration="2000" className={`${styles.education_item} mx-3`}>
       <div className={styles.education_item_small}>
         <div className={styles.education_img}>
           <img src={education.img} alt={education.img} />
@@ -36,22 +40,26 @@ const Education = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    cssEase: "linear"
   };
 
   return (
-    <div className="education my-5">
+    <section data-aos="fade-up"
+      data-aos-duration="2000" className="education my-5">
       <div className={`${styles.education_flexbox} container`}>
         <h3>EDUCATIONAL PROGRAMS</h3>
         <Slider {...sliderSettings} className={styles.slider}>
-          {education.map((item: SingleEducationProps) => (
+          {education.map((item: EducationType) => (
             <SingleEducation key={item.id} education={item} />
           ))}
         </Slider>
       </div>
-    </div>
+    </section>
   );
 };
 

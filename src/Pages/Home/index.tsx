@@ -3,11 +3,16 @@ import { Link } from "react-router-dom";
 import Event from "../../components/Event";
 import Education from "../../components/Education";
 import Ticket from "../../components/Ticket";
+import Banner from "../../components/Banner";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
+  AOS.init();
   return (
     <section className="home mt-2">
-      <section className={styles.banner}>
+      <section data-aos="zoom-in" className={styles.banner}>
         <div className={styles.video_banner}>
           <video
             className={styles.video}
@@ -19,7 +24,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="history my-3">
+      <section data-aos="zoom-in" className="history my-3">
         <div className="history_main d-flex container">
           <div className="history_text col-md-8 col-sm-12 ">
             <div className={styles.history_title}>
@@ -50,8 +55,9 @@ const Home = () => {
         </div>
       </section>
       <Event />
-      <Education />
       <Ticket />
+      <Education />
+      <Banner />
     </section>
   );
 };

@@ -1,9 +1,12 @@
 .event {
     background: rgba(179, 219, 237, 0.4);
-    height: 1400px
+    height: 1400px;
+    overflow: hidden;
 };
+
 .event_great {
     column-gap: 50px;
+    position: absolute;
 }
 .event .event_great .great_content{
     padding-top: 150px;
@@ -44,11 +47,12 @@
 }
 .great_fish {
     color: #0085B7;
-    margin-left: 160px;
+    margin-left: 185px;
+    overflow:visible !important;
 }
 .great_fish>p:first-child{
     font-size: 200px;
-    margin-top: -180px;
+    margin-top: -115px;
     margin-left: 0px;
 }
 .great_fish>p:nth-child(2){
@@ -165,7 +169,7 @@
     box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0.2);
 }
 .event_family .event_family_fish {
-    margin-left: 80px;
+    margin-left: 110px;
     margin-top: 100px;
     color: #0085B7;
     display: flex;

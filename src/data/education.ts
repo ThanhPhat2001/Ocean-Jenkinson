@@ -11,7 +11,7 @@ export const education = [
     title: "Outreach Programs",
     content:
       "Jenkinson’s Aquarium offers educators an effective way to introduce the wonders of the aquatic world to their students.",
-    img: "../../public/images/education_image2.jpg",
+    img: "public/images/education_image2.jpg",
   },
   {
     id: 3,

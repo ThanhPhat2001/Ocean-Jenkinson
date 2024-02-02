@@ -23,14 +23,17 @@
 .navigation_footer>li{
     width: 250px;
 }
+.logo {
+    padding-top: 22px;
+}
 .logo>img {
-    width: 280px;
-    height: 170px;
+    width: 240px;
+    height: 100px;
 }
 .logo .logo_content {
     width: 300px;
     line-height: 25px;
-    margin-top: -30px;
+    padding-top: 10px;
 }
 .logo>p {
     width: 150px;
@@ -72,7 +75,7 @@
 }
 .navigation_footer>li>.support>ul {
     margin-left: -34px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .navigation_footer>li>.support>ul>li {
     line-height: 30px;
@@ -86,7 +89,7 @@
 }
 .navigation_footer>li>.contact>ul {
     margin-left: -34px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .navigation_footer>li>.contact>ul>li {
     line-height: 20px;
@@ -100,11 +103,19 @@
 }
 .navigation_footer>li>.pay>ul {
     margin-left: -34px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .navigation_footer>li>.pay>ul>li {
     line-height: 25px;
     color: #ffffff !important;
+}
+.navigation_footer>li>.pay>ul>li:last-child {
+    padding-top: 15px;
+}
+.navigation_footer>li>.pay>ul>li:last-child>img {
+    width: 230px;
+    height: 45px;
+    background-color: #111589f5 ;
 }
 .bottom_footer {
     justify-content: center;

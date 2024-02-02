@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import Logo from "../../../public/images/logo3.png";
+import Logo from "../../../public/images/logo4.png";
 import Pay from "../../../public/images/pay.png";
 import {
   FaFacebookF, FaTwitter, FaGooglePlusG, FaPinterestP, FaInstagram, FaMapMarkerAlt, FaRegEnvelope, FaPhoneAlt, FaFax   } from "react-icons/fa";
