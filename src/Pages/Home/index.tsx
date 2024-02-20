@@ -2,10 +2,9 @@ import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import Event from "../../components/Event";
 import Education from "../../components/Education";
-import Ticket from "../../components/Ticket";
-import Banner from "../../components/Banner";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Category from "../../components/Category";
 
 
 const Home = () => {
@@ -49,15 +48,14 @@ const Home = () => {
           </div>
           <div className={`${styles.history_more} col-md-4 col-sm-12`}>
             <Link to="/History">
-              <a href="#">Find Out More !</a>
+              <a href="#">FIND OUT MORE !</a>
             </Link>
           </div>
         </div>
       </section>
       <Event />
-      <Ticket />
+      <Category />
       <Education />
-      <Banner />
     </section>
   );
 };

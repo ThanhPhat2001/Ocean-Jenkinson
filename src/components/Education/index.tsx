@@ -20,8 +20,8 @@ const SingleEducation = ({
 }) => {
   AOS.init();
   return (
-    <div data-aos="fade-up"
-      data-aos-duration="2000" className={`${styles.education_item} mx-3`}>
+    <div
+       className={`${styles.education_item}`}>
       <div className={styles.education_item_small}>
         <div className={styles.education_img}>
           <img src={education.img} alt={education.img} />
@@ -42,17 +42,17 @@ const Education = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // speed: 3000,
+    // autoplaySpeed: 2000,
     cssEase: "linear"
   };
 
   return (
-    <section data-aos="fade-up"
-      data-aos-duration="2000" className="education my-5">
+    <section 
+      className={styles.education}>
       <div className={`${styles.education_flexbox} container`}>
-        <h3>EDUCATIONAL PROGRAMS</h3>
+        <h3 className={styles.section_item__separate}>EDUCATIONAL PROGRAMS</h3>
         <Slider {...sliderSettings} className={styles.slider}>
           {education.map((item: EducationType) => (
             <SingleEducation key={item.id} education={item} />

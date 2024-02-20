@@ -50,17 +50,22 @@
     margin-left: 185px;
     overflow:visible !important;
 }
-.great_fish>p:first-child{
+/* .great_fish>p:first-child{
     font-size: 200px;
     margin-top: -115px;
     margin-left: 0px;
+} */
+.great_fish>p:first-child>svg{
+    font-size: 200px;
+    margin-top: -60px;
+    margin-left: 0px;
 }
-.great_fish>p:nth-child(2){
+.great_fish>p:nth-child(2)>svg{
     font-size: 130px;
     margin-top: -200px;
     margin-left: 250px;
 }
-.great_fish>p:last-child{
+.great_fish>p:last-child>svg{
     font-size: 80px;
     margin-top: -110px;
     margin-left: 160px;
@@ -75,16 +80,16 @@
     display: flex;
     margin-top: 335px;
 }
-.event_exhibits_fish>p:first-child {
+.event_exhibits_fish>p:first-child>svg {
     font-size: 200px;
     margin-left: -140px;
 }
-.event_exhibits_fish>p:nth-child(2){
+.event_exhibits_fish>p:nth-child(2)>svg{
     font-size: 130px;
     margin-left: 35px;
     margin-top: 95px
 }
-.event_exhibits_fish>p:last-child{
+.event_exhibits_fish>p:last-child>svg{
     font-size: 80px;
     margin-top: 210px;
     margin-left: -205px;
@@ -169,20 +174,20 @@
     box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0.2);
 }
 .event_family .event_family_fish {
-    margin-left: 110px;
+    margin-left: 150px;
     margin-top: 100px;
     color: #0085B7;
     display: flex;
 }
-.event_family .event_family_fish>p:first-child {
+.event_family .event_family_fish>p:first-child>svg {
     font-size: 150px;
 }
-.event_family .event_family_fish>p:nth-child(2) {
+.event_family .event_family_fish>p:nth-child(2)>svg {
     font-size: 120px;
     margin-top: 70px;
     margin-left: 20px;
 }
-.event_family .event_family_fish>p:last-child {
+.event_family .event_family_fish>p:last-child>svg {
     font-size: 80px;
     margin-top: 170px;
     margin-left: -200px;

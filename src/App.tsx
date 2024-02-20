@@ -10,6 +10,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import History from "./Pages/History";
 import Booking from "./Pages/Booking";
+import SeaImg from "./components/SeaImg";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <Route path="/history" element={<History />} />
       <Route path="/booking" element={<Booking />} />
       <Route path="*" element={<NoPage />} />
+      <Route path="/SeaImg" element={<SeaImg />} /> {/* Add route for SeaImg */}
     </Routes>
     <Footer />
   </BrowserRouter>

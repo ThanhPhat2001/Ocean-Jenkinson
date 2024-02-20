@@ -22,7 +22,7 @@ export const education = [
   },
   {
     id: 4,
-    title: "Children And Familiy Programs",
+    title: "Children Programs",
     content: "Explore, play, and learn together!",
     img: "public/images/education_image4.jpg",
   },

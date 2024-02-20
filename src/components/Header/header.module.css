@@ -1,3 +1,6 @@
+.header {
+    overflow: hidden;
+}
 .icon {
     font-size: 14px;
     margin-right: 5px;
@@ -15,25 +18,24 @@
     270deg,rgba(57,192,196,1) 0%,rgba(18,106,179,1) 100%);
     padding-top: 3px;
     height: 35px;
-       
+    
 }
 
 .top_header {
     border: 1px solid white;
     border-bottom: 1px solid rgba(208, 203, 203, 0.842);
-    display: flex;
-    justify-content: space-between;
 }
 
 .left_top_header {
     display: flex;
-    margin-left: 24px;
+    padding-left: 30px;
 }
 
 .right_top_header {
     display: flex;
-    margin-right: 24px;
+    justify-content: end;
     padding-top: 2px;
+    padding-right: 30px;
 }
 .right_top_header .phone {
     display: flex;
@@ -59,11 +61,11 @@
 }
 .logo {
     width: 290px;
-    height: 100px;
-    
+    height: 100px;  
 }
 .bottom_header {
     font-family: 'Cormorant Garamond', serif;
+    flex-direction: row;
 }
 .bottom_header .right_bottom_header .login {
     margin-left: 100px;
@@ -90,19 +92,27 @@
 .login {
     display: flex;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 500;   
     padding-top: 30px;
     margin-top: 25px;
-    border-left: 1px solid rgba(198, 196, 196, 0.868);
+
     height: 50px;
+    padding-left: 145px;
 }
 .login .account {
     padding-right: 50px;
-    margin-left: 40px;
-    margin-top: -21px;
+    margin-top: -25px;
+   
+    border-left: 1px solid rgba(198, 196, 196, 0.868);
 }
 .login .account>a {
     color: #012f65!important;
+    display: flex;
+    column-gap: 10px;
+    padding-left: 20px;
+}
+.login .account>a>span {
+    padding-top: 4px;
 }
 .login .account>a:hover
  {
@@ -116,4 +126,35 @@
 }
 .icon_login>ul>li>a {
     color: #012f65!important;
+}
+
+@media screen and (min-width: 1024px) {
+    .left_bottom_header {
+        margin-left: -40px;
+    }
+    .logo {
+        width: 200px;
+        height: 80px;  
+    }
+  }
+@media only screen and (max-width: 767px) {
+    .top_header {
+      display: block;
+    }
+    .phone {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .phone {
+        display: none !important;
+    }
+  }
+  
+@media only screen and (min-width: 768px) {
+    .top_header {
+        display: flex;
+        justify-content: space-between;
+    }
 }

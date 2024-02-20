@@ -30,7 +30,7 @@ const SingleTicket = ({ ticket }: { ticket: ticketType }) => {
       <strong className={`${styles.ticket_price} col-md-2`}>Price: {ticket.price}$</strong>
       <div className={`${styles.ticket_booking} col-md-2`}>
         <Link to="/Booking">
-          Booking
+          BOOKING
         </Link>
       </div>
     </div>
