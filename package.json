@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build", 
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -14,8 +14,6 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
     "i": "^0.3.7",
