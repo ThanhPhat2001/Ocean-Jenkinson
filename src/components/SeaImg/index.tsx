@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS if not already imported
 import styles from './SeaImg.module.css';
 import { FaHeart, FaMagnifyingGlass } from 'react-icons/fa6';

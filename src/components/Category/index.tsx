@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './category.module.css';
 import Filter from '../Filter'; 
 import { FaCalendarDays, FaClock, FaEye, FaHeart, FaRegBookmark, FaStar } from 'react-icons/fa6';
