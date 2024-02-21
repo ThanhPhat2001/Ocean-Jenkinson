@@ -14,7 +14,7 @@
 }
 .navigation_footer {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 .navigation_footer>li:first-child{
@@ -113,7 +113,7 @@
     padding-top: 15px;
 }
 .navigation_footer>li>.pay>ul>li:last-child>img {
-    width: 230px;
+    /* width: 230px; */
     height: 45px;
     background-color: #111589f5 ;
 }

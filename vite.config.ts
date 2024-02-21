@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'build', // Thay 'build' bằng thư mục bạn muốn xuất build
   },
+  base: "/Ocean-Jenkinson",
 })

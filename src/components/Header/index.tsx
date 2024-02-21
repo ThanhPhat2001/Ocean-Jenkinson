@@ -20,14 +20,14 @@ const Header = () => {
     >
       <div className={styles.header}>
         <div className={styles.top_header}>
-          <div className={`${styles.left_top_header} col-xxs-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xxxl-6`}>
+          <div className={`${styles.left_top_header} col-sm-12 col-md-6 col-lg-6 col-xxl-6`}>
             <a className={styles.icon} href="#">
               <FaMapMarker />
             </a>
             <p>300 Ocean Avenue, Point Pleasant Beach, NJ 08742</p>
           </div>
 
-          <div className={`${styles.right_top_header} col-xxs-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-xxxl-6`}>
+          <div className={`${styles.right_top_header} col-sm-12 col-md-6 col-lg-6 col-xxl-6`}>
             <div className={styles.phone}>
               <a className={styles.icon} href="#">
                 <FaPhoneAlt />
