@@ -1,12 +1,27 @@
-@media only screen and (max-width: 767px) {
-    .main {
-      display: block;
+/* CSS chung */
+.history {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* CSS cho màn hình có độ rộng nhỏ hơn 768px (mobile) */
+  @media screen and (max-width: 767px) {
+    .history {
+      padding: 10px;
     }
   }
   
-  @media only screen and (min-width: 768px) {
-    .main {
-      display: flex;
+  /* CSS cho màn hình có độ rộng từ 768px đến 991px (tablet) */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .history {
+      background-color: #ccc;
+    }
+  }
+  
+  /* CSS cho màn hình có độ rộng từ 992px trở lên (desktop) */
+  @media screen and (min-width: 992px) {
+    .history {
+      border: 1px solid #000;
     }
   }
   

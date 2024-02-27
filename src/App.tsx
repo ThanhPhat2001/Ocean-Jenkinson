@@ -15,7 +15,7 @@ import SeaImg from "./components/SeaImg";
 const App = () => {
   return (
     
-    <BrowserRouter>
+    <BrowserRouter basename="/Ocean-Jenkinson">
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />

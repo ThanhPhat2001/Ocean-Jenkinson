@@ -3,54 +3,37 @@
     270deg,rgba(57,192,196,1) 0%,rgba(18,106,179,1) 100%);
     font-family: 'Play', sans-serif;
     color: white;
-    width: 100%;
 }
 
 .top_footer {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
     border-bottom: 1px solid #acacac;
 }
-.navigation_footer {
-    width: 100%;
-    /* display: flex; */
-    justify-content: space-between;
-}
-.navigation_footer>li:first-child{
-    width: 350px;
-}
-.navigation_footer>li{
-    width: 250px;
-}
+
 .logo {
     padding-top: 22px;
 }
 .logo>img {
-    width: 240px;
-    height: 100px;
+    width: auto;
+    height: auto;
 }
-.logo .logo_content {
-    width: 300px;
-    line-height: 25px;
-    padding-top: 10px;
-}
+
 .logo>p {
-    width: 150px;
     color: #ffffff;
+    padding-top: 10px;
+    line-height: 25px;
+    font-size: 18px;
 }
 .logo .icon {
     display: flex;
     column-gap: 15px;
-    margin-left: -35px;
+    margin-left: -40px;
     padding-top: 10px;
 }
 .logo .icon>li {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.13) none repeat scroll 0 0;
-    padding: 5px 10px;
+    padding: 5px 12px;
     font-size: 20px;
-    
 }
 .logo .icon>li>a {
     color: white !important;
@@ -67,59 +50,42 @@
     -webkit-transition: all 600ms ease 0s;
     
 }
-.navigation_footer>li>div>h6 {
+.top_footer .support>h6,
+.top_footer .contact>h6,
+.top_footer .pay>h6 {
     font-size: 18px;
     padding-top: 60px;
     font-weight: 800;
     color: #012f65!important;
+    padding-left: 35px;
 }
-.navigation_footer>li>.support>ul {
-    margin-left: -34px;
-    padding-top: 40px;
+.top_footer .support>ul,
+.top_footer .contact>ul,
+.top_footer .pay>ul {
+    padding-top: 25px;
 }
-.navigation_footer>li>.support>ul>li {
-    line-height: 30px;
+.top_footer .support>ul>li {
+    padding: 5px 0px;
 }
-.navigation_footer>li>.support>ul>li>a {
+.top_footer .support>ul>li>a,
+.top_footer .contact>ul>li>a,
+.top_footer .pay>ul>li>a {
     color: #ffffff !important;
 }
-.navigation_footer>li>.support>ul>li>a:hover {
+.top_footer .support>ul>li>a:hover {
     color:#111589f5 !important;
     -webkit-transition: all 600ms ease 0s;
 }
-.navigation_footer>li>.contact>ul {
-    margin-left: -34px;
-    padding-top: 40px;
-}
-.navigation_footer>li>.contact>ul>li {
-    line-height: 20px;
-}
-.navigation_footer>li>.contact>ul>li>a {
-    color: #ffffff !important;
-}
-.navigation_footer>li>.contact>ul>li>a:hover {
+.top_footer .contact>ul>li:nth-child(2)>a:hover {
     color:#111589f5 !important;
     -webkit-transition: all 600ms ease 0s;
 }
-.navigation_footer>li>.pay>ul {
-    margin-left: -34px;
-    padding-top: 40px;
-}
-.navigation_footer>li>.pay>ul>li {
-    line-height: 25px;
-    color: #ffffff !important;
-}
-.navigation_footer>li>.pay>ul>li:last-child {
-    padding-top: 15px;
-}
-.navigation_footer>li>.pay>ul>li:last-child>img {
-    /* width: 230px; */
-    height: 45px;
-    background-color: #111589f5 ;
+.top_footer .pay>ul>li:last-child {
+    background-color: #111589f5 ; 
 }
 .bottom_footer {
     justify-content: center;
-    padding: 10px 0px;
+    padding-top: 10px;
     display: flex;
 }
 .bottom_footer>p {
@@ -129,3 +95,67 @@
     font-weight: 600;
     color:#111589f5 !important;
 }
+/* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
+@media (max-width: 575.98px) {
+    .top_footer {
+        text-align: center;
+    }
+    .top_footer .logo .icon {
+        justify-content: center;
+    }
+    .top_footer .support>h6,
+    .top_footer .contact>h6,
+    .top_footer .pay>h6 {
+        padding-top: 10px;
+    }
+    .top_footer .support>ul,
+    .top_footer .contact>ul,
+    .top_footer .pay>ul {
+        padding-top: 10px;
+    }
+    .top_footer .contact>ul>li {
+        justify-content: center;
+    }
+    .top_footer .pay>ul>li:last-child>img{
+        width: auto;
+        height: auto;
+    }
+    .bottom_footer>p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .bottom_footer>p>a {
+        font-size: 14px;
+    }
+}
+/* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .top_footer .contact>h6,
+    .top_footer .pay>h6 {
+       padding-top: 15px;
+    }
+    .bottom_footer {
+        text-align: center;
+    }
+    .bottom_footer>p{
+        font-size: 16px;
+    }
+    .bottom_footer>a {
+        font-size: 16px;
+    }
+}
+/* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .bottom_footer>p{
+        font-size: 16px;
+    }
+    .bottom_footer>p>a {
+        font-size: 16px;
+    }
+}
+ /* CSS cho màn hình có độ rộng từ 992px đến 1199px (Destop small) */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    .logo .icon {
+        column-gap: 5px;
+    }
+  }
