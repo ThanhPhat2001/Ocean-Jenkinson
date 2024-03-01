@@ -1,57 +1,80 @@
+import education_image1 from "../../public/images/education_image1.jpg"
+import education_image2 from "../../public/images/education_image2.jpg"
+import education_image3 from "../../public/images/education_image3.jpg"
+import education_image4 from "../../public/images/education_image4.jpg"
+import education_image5 from "../../public/images/education_image5.jpg"
+import education_image6 from "../../public/images/education_image6.jpg"
+import education_image7 from "../../public/images/education_image7.jpg"
+import education_image8 from "../../public/images/education_image8.jpeg"
+
 export const education = [
   {
     id: 1,
     title: "Educational Programs",
-    content:
-      "Family Fun Learning Environment, Animal Encounters, Lunch with a Keeper, and much more.",
-    img: "public/images/education_image1.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Friday - Sunday",
+    like: 5912,
+    img: education_image1
+,
   },
   {
     id: 2,
     title: "Outreach Programs",
-    content:
-      "Jenkinson’s Aquarium offers educators an effective way to introduce the wonders of the aquatic world to their students.",
-    img: "public/images/education_image2.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Monday - Sunday",
+    like: 3812,
+    img: education_image2,
   },
   {
     id: 3,
     title: "Specialty/Awareness Days",
-    content:
-      "From penguins and salamanders to Earth Day & seals, we celebrate everything from animals to the planet they call home!",
-    img: "public/images/education_image3.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Monday - Friday",
+    like: 1230,
+    img: education_image3,
   },
   {
     id: 4,
     title: "Children Programs",
-    content: "Explore, play, and learn together!",
-    img: "public/images/education_image4.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Friday - Sunday",
+    like: 4312,
+    img: education_image4,
   },
   {
     id: 5,
     title: "Join the Fun ",
-    content:
-      " Join the Children’s Aquarium and get your Annual Pass Member identification card. The card allows you to visit the Aquarium as often as you like during the year.",
-    img: "public/images/education_image5.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Friday - Sunday",
+    like: 952,
+    img: education_image5,
   },
   {
     id: 6,
     title: "Special Events",
-    content:
-      " There’s always something amazing going on at the Aquarium. From State Fair of Texas activities to animal feeding and educational experiences.",
-    img: "public/images/education_image6.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Friday - Sunday",
+    like: 1198,
+    img: education_image6,
   },
   {
     id: 7,
     title: "What's New",
-    content:
-      " Pan for gems, fossils and other surprises at the Children’s Aquarium Mining Company, located just outside the Aquarium.",
-    img: "public/images/education_image7.jpg",
+    time: "9:00 AM - 6:00 PM",
+    day: "Friday - Sunday",
+    like: 521,
+    img: education_image7,
   },
   {
     id: 8,
     title: "Ocean Investigators",
-    content:
-      "Foster a love for the ocean through engaging hands-on science programs!",
-    img: "../../public/images/education_image8.jpeg",
+    time: "9:00 AM - 6:00 PM",
+      day: "Friday - Sunday",
+      like: 2123,
+    img: education_image8,
   },
 ];
+
+
+
+

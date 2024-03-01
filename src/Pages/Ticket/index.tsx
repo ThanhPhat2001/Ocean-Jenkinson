@@ -1,42 +1,103 @@
-import styles from './ticket.module.css'
-import { Link } from "react-router-dom";
+import  { useState } from 'react';
+import StarRating from "../../components/StarRating";
+import styles from "./ticket.module.css"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { education } from "../../data/education";
+import { FaCalendarDays, FaClock, FaHeartCircleCheck, FaRegHeart } from 'react-icons/fa6';
 
-const Ticket = () => {
+
+type EducationType = {
+  id: number;
+  title: string;
+  time: string;
+  day: string;
+  like: number;
+  img: string;
+};
+
+const SingleEducation = ({ education }: { education: EducationType }) => {
+  const [liked, setLiked] = useState(false);
+  const [likeCount, setLikeCount] = useState(education.like);
+
+  const handleLike = () => {
+    if (liked) {
+      setLikeCount(prevCount => prevCount - 1);
+    } else {
+      setLikeCount(prevCount => prevCount + 1);
+    }
+    setLiked(!liked);
+  };
+
   return (
-    <div>
-      <div className="history_main  container">
-        <div className="row">
-          <div className="history_text col-8 ">
-            <div className={styles.history_title}>
-              <h1>
-                <span>Welcome to</span>
-                <br />
-                Jenkinson’s Aquarium
-              </h1>
-            </div>
-            <div className={styles.history_content}>
-              <p>
-                Jenkinson’s Aquarium is a privately owned facility located on
-                the boardwalk in Point Pleasant Beach, NJ. Since June of 1991,
-                the aquarium has been dedicated to educating the public on all
-                aspects of marine life and conservation. Each exhibit is
-                designed to promote awareness of the animals, their habitats and
-                conservation. We strive to provide our guests with a unique and
-                memorable experience through creative exhibits as well as
-                innovative educational and outreach programs...
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.history_more} col-4`}>
-            <Link to="/History">
-              <a href="#">FIND OUT MORE !</a>
-            </Link>
-          </div>
+    <div className={styles.education_flexbox}>
+      <img src={education.img} alt="" />
+      <div className={styles.education_content}>
+        <h2>{education.title}</h2>
+        <div className={styles.education_time}>
+          <i><FaClock /></i>
+          <span>{education.time}</span>
         </div>
+        <div className={`${styles.education_day} my-2`}>
+          <i><FaCalendarDays /></i>
+          <span>{education.day}</span>
+        </div>
+        <div className={`${styles.education_like} d-flex my-2`} onClick={handleLike}>
+          <i><FaHeartCircleCheck /></i>
+          <strong>{likeCount}</strong>
+          <p>{liked ? <FaHeartCircleCheck style={{ color: 'red' }} /> : <FaRegHeart />}</p>
+        </div>
+        <StarRating />
       </div>
     </div>
   );
 };
 
+const Ticket = () => {
+  const sliderSettings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  }
+  return (
+    <section className={`${styles.education} container my-3`}>
+      <Slider {...sliderSettings} className={styles.slider}>
+        {education.map((item: EducationType) => (
+          <SingleEducation key={item.id} education={item} />
+        ))}
+      </Slider>
+    </section>
+  );
+};
 
-export default Ticket
+export default Ticket;
