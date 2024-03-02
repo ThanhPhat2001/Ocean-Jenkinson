@@ -1,0 +1,162 @@
+.history .title>h1 {
+    font: 700 40px/35px 'Roboto', sans-serif;
+    white-space: nowrap;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #888888;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 15px;
+    width: 100px;
+    transition: all 0.5s ease 0s;
+    color: #012f65;
+    cursor: pointer;
+}
+
+.history .title>h1:hover {
+    width: 150px;
+}
+
+.history .background .main_background {
+    position: relative;
+}
+
+.history .background .main_background {
+    text-align: center;
+}
+
+.history .background .main_background>img {
+    max-height: 650px;
+    width: 100%;
+}
+
+.history .background .content_background {
+    position: absolute;
+    margin-top: -420px;
+    margin-left: 390px;
+}
+
+.history .background .content_background>img {
+    max-width: 500px;
+    height: auto;
+}
+
+.history .content>p:first-child {
+    padding-top: 50px;
+}
+
+.history .content>p {
+    padding-bottom: 5px;
+}
+
+/* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
+@media (max-width: 575.98px) {
+    .history .title>h1 {
+        font: 700 25px/20px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto 15px;
+        width: 100px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+    .history .background .content_background>img {
+        max-width: 200px;
+        height: auto;
+    }
+    .history .background .content_background {
+        margin-top: -160px;
+        margin-left: 110px;
+    }
+    .history .content>p>span {
+        font-size: 14px;
+    }
+}
+
+/* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .history .title>h1 {
+        font: 700 30px/25px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto 15px;
+        width: 100px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+    .history .background .content_background {
+        margin-top: -200px;
+        margin-left: 120px;
+    }
+    .history .background .content_background>img {
+        max-width: 250px;
+        height: auto;
+    }
+    .history .content>p>span {
+        font-size: 16px;
+    }
+}
+
+/* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .history .title>h1 {
+        font: 700 35px/30px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px auto 15px;
+        width: 100px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+
+    .history .background .content_background {
+        margin-top: -280px;
+        margin-left: 180px;
+    }
+
+    .history .background .content_background>img {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .history .content>p>span {
+        font-size: 16px;
+    }
+}
+
+/* CSS cho màn hình có độ rộng từ 992px đến 1199px (Destop small) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .history .background .content_background {
+        position: absolute;
+        margin-top: -380px;
+        margin-left: 230px;
+    }
+
+    .history .background .content_background>img {
+        max-width: 450px;
+        height: auto;
+    }
+}

@@ -40,7 +40,7 @@ const StarRating = () => {
 
     return (
         <div className={styles.star}>
-            {[...Array(5)].map((star, i) => {
+            {[...Array(5)].map((_, i) => {
                 const ratingValue = i + 1;
                 return (
                     <label key={i}>
