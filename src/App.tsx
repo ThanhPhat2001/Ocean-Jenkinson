@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
-import Ticket from "./Pages/Ticket";
+import Ticket from "./Pages/TicketPage";
 import AboutUs from "./Pages/AboutUs";
 import NoPage from "./Pages/NoPage";
 import Login from "./Pages/Login";

@@ -62,14 +62,8 @@ const Header = () => {
                 <Nav.Link><Link to="/Ticket">
                   TICKET
                 </Link></Nav.Link>
-                <Nav.Link><Link to="/Education">
-                  EDUCATION
-                </Link></Nav.Link>
                 <Nav.Link><Link to="/Blog">
                   BLOG
-                </Link></Nav.Link>
-                <Nav.Link><Link to="/About">
-                  ABOUT
                 </Link></Nav.Link>
                 <Nav.Link><Link to="/Contact">
                   CONTACT

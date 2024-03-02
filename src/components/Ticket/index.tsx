@@ -16,8 +16,7 @@ type ticketType = {
 const SingleTicket = ({ ticket }: { ticket: ticketType }) => {
   AOS.init();
   return (
-    <div data-aos="fade-up"
-      data-aos-duration="2000" className={styles.ticket_item}>
+    <div className={styles.ticket_item}>
       <h3 className={`${styles.ticket_name} col-md-4`}>{ticket.name}</h3>
       <div className={`${styles.ticket_content} col-m-4`}>
         <span>
@@ -40,8 +39,7 @@ const SingleTicket = ({ ticket }: { ticket: ticketType }) => {
 const Ticket = () => {
 
   return (
-    <section data-aos="fade-up"
-      data-aos-duration="2000" className="ticket">
+    <section className="ticket">
       <div className={`${styles.main_ticket} container`}>
         <h3>TICKET</h3>
         {ticket.map((item: ticketType) => (

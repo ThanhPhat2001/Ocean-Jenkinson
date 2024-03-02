@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './category.module.css';
 import Filter from '../Filter'; 
-import { FaCalendarDays, FaClock, FaEye, FaHeart, FaRegBookmark, FaStar } from 'react-icons/fa6';
+import { FaCalendarDays, FaClock, FaEye, FaHeart, FaRegBookmark } from 'react-icons/fa6';
 import { shark } from '../../data/shark';
 import { best } from '../../data/best';
 import { dolphin } from '../../data/dolphin';
@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
+import StarRating from '../StarRating';
 
 type cardType = {
   id: number;
@@ -56,13 +57,7 @@ const SingleCategory = ({ category }: { category: cardType }) => {
             </i>
             <span>View: {category.View}</span>
           </div>
-          <div className={`${styles.starIcons} d-flex align-items-center`}>
-            <FaStar className={styles.starIcon} />
-            <FaStar className={styles.starIcon} />
-            <FaStar className={styles.starIcon} />
-            <FaStar className={styles.starIcon} />
-            <FaStar className={styles.starIcon} />
-          </div>
+          <StarRating />
           <div className={`${styles.review} mt-5`}>
             <a href='' style={{ fontSize: '' }}>Some review text goes here...</a>
           </div>
