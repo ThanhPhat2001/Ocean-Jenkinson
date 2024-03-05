@@ -54,7 +54,7 @@ const SingleEducation = ({ education }: { education: EducationType }) => {
   );
 };
 
-const Ticket = () => {
+const Eucation = () => {
   const sliderSettings = {
     dots: false,
     infinite: false,
@@ -101,4 +101,4 @@ const Ticket = () => {
   );
 };
 
-export default Ticket;
+export default Eucation;
