@@ -84,17 +84,23 @@
 .bottom_header .user_action {
     text-align: center;
     border-left: 1px solid black;
+    position: relative;
 }
 .bottom_header .user_action>ul {
     display: flex;
     column-gap: 30px;
-    padding-top: 30px;
+}
+.bottom_header .user_action>ul>li:first-child {
+   padding-top: 30px;
 }
 .bottom_header .user_action>ul>li>a>.login{
     display: flex;
     column-gap: 10px;
     font-weight: 600;
     font-size: 20px;
+}
+.bottom_header .user_action>ul>li:last-child{
+    padding-top: 30px;
 }
 .bottom_header .user_action>ul>li>a>.cart{
     position: relative;
@@ -191,15 +197,15 @@
         display: none;
     } */
     .top_header .left_top_header {
-        margin-left: -25px;
+        margin-left: -23px;
         padding-left: 0px;
     }
     .top_header .left_top_header>p {
-        font-size: 15px;    
+        font-size: 14px;    
         padding-top: 2px;
     }
     .top_header .right_top_header {
-        margin-left: -178px;
+        margin-left: -195px;
         
     }
     .top_header .right_top_header .phone {
@@ -211,10 +217,10 @@
         padding-top: 2px;
     }
     .top_header .right_top_header .open_daily{
-        margin-left: 18px;
+        margin-left: 8px;
     }
     .top_header .right_top_header .open_daily>p{
-        font-size: 15px;
+        font-size: 14px;
         width: 240px;
         padding-top: 2px;
     }

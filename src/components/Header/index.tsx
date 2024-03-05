@@ -12,9 +12,13 @@ import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useShoppingContext } from "../../contexts/ShoppingContext";
 
 
 const Header = () => {
+
+  const { cartQty } = useShoppingContext();
+
   return (
     <div className={styles.header}>
       <div className={styles.top_header}>
@@ -23,7 +27,7 @@ const Header = () => {
             <div
               className={`${styles.left_top_header} col-xs-7 col-sm-7 col-md-7 col-lg-6 col-xl-6`}
             >
-              <a className={styles.icon} href="#">
+              <a className={styles.icon} href="javascript:void(0)">
                 <FaMapMarker />
               </a>
               <p>300 Ocean Avenue, Point Pleasant Beach, NJ 08742</p>
@@ -33,13 +37,13 @@ const Header = () => {
               className={`${styles.right_top_header}  col-xs-5 col-sm-5 col-md-5 col-lg-6 col-xl-6`}
             >
               <div className={styles.phone}>
-                <a className={styles.icon} href="#">
+                <a className={styles.icon} href="javascript:void(0)">
                   <FaPhoneAlt />
                 </a>
                 <p>800.567.1234</p>
               </div>
               <div className={`${styles.open_daily} d-flex`}>
-                <a className={styles.icon} href="#">
+                <a className={styles.icon} href="javascript:void(0)">
                   <FaRegClock />
                 </a>
                 <p>Today's Hours: 9:00 AM – 6:00 PM</p>
@@ -58,6 +62,9 @@ const Header = () => {
               <Nav className={`${styles.title_navigation} me-auto`}>
                 <Nav.Link> <Link to="/">
                   HOME
+                </Link></Nav.Link>
+                <Nav.Link><Link to="/History">
+                  HISTORY
                 </Link></Nav.Link>
                 <Nav.Link><Link to="/Ticket">
                   TICKET
@@ -78,10 +85,10 @@ const Header = () => {
                     <span>LOGIN</span>
                   </div>
                 </Link></li>
-                <li><Link to="/Cart">
+                <li><Link to="/CheckOut">
                   <div className={styles.cart}>
                     <p><FaShoppingCart /></p>
-                    <span>0</span>
+                    <span>{cartQty}</span>
                   </div>
                 </Link></li>
               </ul>

@@ -1,9 +1,21 @@
-.main_ticket>h3 {
-    color: #012f65;
+.main_ticket>h1 {
+    font: 700 40px/35px 'Roboto', sans-serif;
+    white-space: nowrap;
+    line-height: 60px;
     text-align: center;
-    font-weight: 800;
-    margin: 40px 0px;
+    border-bottom: 2px solid #888888;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 15px;
+    width: 50px;
+    transition: all 0.5s ease 0s;
+    color: #012f65;
     cursor: pointer;
+}
+.main_ticket>h1:hover {
+    width: 100px;
 }
 .ticket_item {
     border-top: 1px solid #acacac;

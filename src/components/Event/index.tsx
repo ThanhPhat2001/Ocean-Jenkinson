@@ -15,7 +15,7 @@ const Event = () => {
           <div className={`${styles.event_great_content} col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 `}>
             <h3>THE AQUARIUM ALWAYS HAS GREAT THINGS GOING ON !</h3>
             <p>
-              <a href="#">VIEW MORE</a>
+              <a href="javascript:void(0)">VIEW MORE</a>
             </p>
           </div>
           <div className={`${styles.event_great_img} col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 `}>
@@ -59,7 +59,7 @@ const Event = () => {
               to get their food.
             </p>
             <span>
-              <a href="#">LEARN MORE</a>
+              <a href="javascript:void(0)">LEARN MORE</a>
             </span>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Event = () => {
           <div className={`${styles.event_family_content} col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 `}>
             <h3>A PLACE TO ENJOY THE WEEKEND FOR EVERY FAMILY</h3>
             <span>
-              <a href="#">LEARN MORE</a>
+              <a href="javascript:void(0)">LEARN MORE</a>
             </span>
           </div>
           <div className={`${styles.event_family_img} col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 `}>

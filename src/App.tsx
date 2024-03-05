@@ -4,33 +4,33 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
 import Ticket from "./Pages/TicketPage";
-import AboutUs from "./Pages/AboutUs";
+import Contact from "./Pages/Contact";
 import NoPage from "./Pages/NoPage";
 import Login from "./Pages/Login";
-import Register from "./Pages/Register";
 import History from "./Pages/History";
-import Booking from "./Pages/Booking";
+import CheckOut from "./Pages/CheckOut";
 import SeaImg from "./components/SeaImg";
+import { ShoppingContextProvider } from './contexts/ShoppingContext'
 
 const App = () => {
   return (
-    
-    <BrowserRouter basename="/Ocean-Jenkinson">
-    <Header />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/ticket" element={<Ticket />} />
-      <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/history" element={<History />} />
-      <Route path="/booking" element={<Booking />} />
-      <Route path="*" element={<NoPage />} />
-      <Route path="/SeaImg" element={<SeaImg />} /> {/* Add route for SeaImg */}
-    </Routes>
-    <Footer />
-  </BrowserRouter>
+    <ShoppingContextProvider>
+      <BrowserRouter basename="/Ocean-Jenkinson">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/ticket" element={<Ticket />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/checkout" element={<CheckOut />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+          <Route path="/SeaImg" element={<SeaImg />} /> {/* Add route for SeaImg */}
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </ShoppingContextProvider>
   )
 }
 

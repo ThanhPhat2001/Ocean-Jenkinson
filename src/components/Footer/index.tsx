@@ -11,7 +11,7 @@ const Footer = () => {
     <div className={`${styles.footer} `}>
     <div className="container">
       <div className={`${styles.top_footer} row`}>
-        <div className={`${styles.logo} col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
+        <div className={`${styles.logo} col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
           <img src={Logo} alt={Logo} />
           <p className={styles.logo_content}>
             Gumbo beet greens corn soko endive gum gourd. Parsley allot
@@ -20,33 +20,33 @@ const Footer = () => {
           </p>
           <ul className={styles.icon}>
             <li>
-              <a href=""><FaFacebookF /></a>
+              <a href="javascript:void(0)"><FaFacebookF /></a>
             </li>
             <li>
-              <a href=""><FaTwitter /></a>
+              <a href="javascript:void(0)"><FaTwitter /></a>
             </li>
             <li>
-              <a href=""><FaGooglePlusG /></a>
+              <a href="javascript:void(0)"><FaGooglePlusG /></a>
             </li>
             <li>
-              <a href=""><FaPinterestP /></a>
+              <a href="javascript:void(0)"><FaPinterestP /></a>
             </li>
             <li>
-              <a href=""><FaInstagram /></a>
+              <a href="javascript:void(0)"><FaInstagram /></a>
             </li>
           </ul>
         </div>
-        <div className={`${styles.support} col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
+        <div className={`${styles.support} col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
           <h6>SUPPORT</h6>
           <ul>
-            <li><a href="#">Customer Support</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Discount</a></li>
-            <li><a href="#">Privacy & Policy</a></li>
-            <li><a href="#">Packages</a></li>
+            <li><a href="javascript:void(0)">Customer Support</a></li>
+            <li><a href="javascript:void(0)">FAQ</a></li>
+            <li><a href="javascript:void(0)">Discount</a></li>
+            <li><a href="javascript:void(0)">Privacy & Policy</a></li>
+            <li><a href="javascript:void(0)">Packages</a></li>
           </ul>
         </div>
-        <div className={`${styles.contact} col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
+        <div className={`${styles.contact} col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
           <h6>CONTACT</h6>
           <ul>
             <li className="d-flex">
@@ -55,7 +55,7 @@ const Footer = () => {
             </li>
             <li className="d-flex">
               <p><FaRegEnvelope /></p>
-              <a className="mx-2" href="#">info@sky.com</a>
+              <a className="mx-2" href="javascript:void(0)">info@sky.com</a>
             </li>
             <li className="d-flex">
               <p><FaPhoneAlt /></p>
@@ -67,7 +67,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={`${styles.pay} col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
+        <div className={`${styles.pay} col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3`}>
           <h6>PAY SAFELY WITH US</h6>
           <ul>
             <li>
@@ -81,8 +81,8 @@ const Footer = () => {
       </div>
       <div className={`${styles.bottom_footer} col-12`}>
         <p>Copyright © 2024 Travel Tour by GoodLayers. All Rights Reserved |
-          <a className="mx-1" href="#">Privacy Policy</a> |
-          <a className="mx-1" href="#">Terms and Conditions</a>
+          <a className="mx-1" href="javascript:void(0)">Privacy Policy</a> |
+          <a className="mx-1" href="javascript:void(0)">Terms and Conditions</a>
         </p>
       </div>
     </div>

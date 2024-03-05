@@ -97,24 +97,45 @@
 }
 /* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
 @media (max-width: 575.98px) {
-    .top_footer {
-        text-align: center;
+    .logo>img {
+        width: 185px;
+        height: 78px;
+    }
+
+    .logo>p {
+        font-size: 16px;
+        padding-left: 5px;
     }
     .top_footer .logo .icon {
         justify-content: center;
+        column-gap: 10px;
+        padding-top: 0px;
+        margin-left: 5px;
     }
     .top_footer .support>h6,
     .top_footer .contact>h6,
     .top_footer .pay>h6 {
         padding-top: 10px;
     }
+    .top_footer .support{
+        padding-top: 35px;
+    }
+    .top_footer .support>ul>li>a,
+    .top_footer .contact>ul>li>a,
+    .top_footer .pay>ul>li>a {
+        font-size: 16px;
+    }
     .top_footer .support>ul,
     .top_footer .contact>ul,
     .top_footer .pay>ul {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .top_footer .contact>ul>li {
         justify-content: center;
+    }
+    .top_footer .contact>ul>li>p,
+    .top_footer .contact>ul>li>a {
+        font-size: 16px;
     }
     .top_footer .pay>ul>li:last-child>img{
         width: auto;
@@ -126,6 +147,13 @@
     }
     .bottom_footer>p>a {
         font-size: 14px;
+    }
+    .top_footer .pay>ul>li:first-child>p {
+        font-size: 16px;
+     }
+    .top_footer .pay>ul>li:last-child>img {
+       width: 150px; 
+       height: 40px;
     }
 }
 /* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */

@@ -1,6 +1,12 @@
+.banner {
+    position: relative;
+    z-index: 1;
+}
 .video {
     height: auto;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 .history_title>h1 {
     color: #007faf;
