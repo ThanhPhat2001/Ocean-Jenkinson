@@ -36,6 +36,9 @@
     padding-left: 10px;
     font-size: 20px;
 }
+.education_flexbox .education_content .education_like {
+    margin-bottom: -10px;
+}
 .education_flexbox .education_content .education_like>i {
     color: #004375;
     font-size: 20px

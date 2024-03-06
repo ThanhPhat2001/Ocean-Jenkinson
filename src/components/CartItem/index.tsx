@@ -30,9 +30,9 @@ const CartItem = () => {
                                 <td>{item.name}</td>
                                 <td>$ {item.price}</td>
                                 <td>
-                                    <button className="btn btn-sm btn-primary mx-2" onClick={() => decreaseQty(item.id)}>-</button>
+                                    <button className={`${styles.button} btn btn-sm btn-primary`} onClick={() => decreaseQty(item.id)}>-</button>
                                     {item.qty}
-                                    <button className="btn btn-sm btn-primary mx-2" onClick={() => increaseQty(item.id)}>+</button>
+                                    <button className={`${styles.button} btn btn-sm btn-primary `} onClick={() => increaseQty(item.id)}>+</button>
                                 </td>
                                 <td>$ {item.price * item.qty}</td>
                                 <td>

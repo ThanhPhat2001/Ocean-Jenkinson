@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import styles from './category.module.css';
-import Filter from '../Filter'; 
-import { FaCalendarDays, FaClock, FaEye, FaHeart, FaRegBookmark } from 'react-icons/fa6';
-import { shark } from '../../data/shark';
-import { best } from '../../data/best';
-import { dolphin } from '../../data/dolphin';
-import { Turtle } from '../../data/turtle';
+import { useState } from "react";
+import styles from "./category.module.css";
+import Filter from "../Filter";
+import { FaCalendarDays, FaClock, FaEye } from "react-icons/fa6";
+import { shark } from "../../data/shark";
+import { best } from "../../data/best";
+import { dolphin } from "../../data/dolphin";
+import { Turtle } from "../../data/turtle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from 'react-router-dom';
-import StarRating from '../StarRating';
+import { Link } from "react-router-dom";
+import FiveStar from "../FiveStar";
 
 type cardType = {
   id: number;
@@ -26,19 +26,13 @@ const SingleCategory = ({ category }: { category: cardType }) => {
   return (
     <div>
       <div className={`card ${styles.card}`}>
-        <img src={category.image} alt={category.image} className={`card-img-top img-fluid ${styles.marine_lifeImg}`} />
+        <img
+          src={category.image}
+          alt={category.image}
+          className={`card-img-top img-fluid ${styles.marine_lifeImg}`}
+        />
         <div className={`${styles.content} ms-3`}>
-          <div className={styles.iconContainer}>
-            <span className={styles.card_badge1}>
-              <FaHeart />
-              <span className={styles.tooltip}>Like</span>
-            </span>
-            <span className={styles.card_badge2}>
-              <FaRegBookmark />
-              <span className={styles.tooltip}>Save</span>
-            </span>
-          </div>
-          <h3 className={`${styles.card_title} fs-5`}>{category.name}</h3>
+          <h3 className={`${styles.card_title}`}>{category.name}</h3>
           <div className={styles.card_info}>
             <i>
               <FaClock />
@@ -51,15 +45,17 @@ const SingleCategory = ({ category }: { category: cardType }) => {
             </i>
             <span>{category.Availability}</span>
           </div>
-          <div className={styles.card_info} >
+          <div className={styles.card_info}>
             <i>
               <FaEye />
             </i>
             <span>View: {category.View}</span>
           </div>
-          <StarRating />
-          <div className={`${styles.review} mt-5`}>
-            <a href='' style={{ fontSize: '' }}>Some review text goes here...</a>
+          <FiveStar />
+          <div className={`${styles.review}`}>
+            <a href="javascript:void(0)" style={{ fontSize: "" }}>
+              Some review text goes here...
+            </a>
           </div>
         </div>
       </div>
@@ -68,28 +64,38 @@ const SingleCategory = ({ category }: { category: cardType }) => {
 };
 
 const Category = () => {
-  const [currentCategory, setCurrentCategory] = useState<string>('Shark');
+  const [currentCategory, setCurrentCategory] = useState<string>("Shark");
 
   const sliderSettings = {
     dots: false,
-    infinite: true,
-    slidesToScroll: 1,
+    infinite: false,
+    speed: 500,
     slidesToShow: 3,
-    // autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
+    slidesToScroll: 1,
+    initialSlide: 0,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
         },
       },
     ],
@@ -102,16 +108,16 @@ const Category = () => {
   let currentData: cardType[] = [];
 
   switch (currentCategory) {
-    case 'Shark':
+    case "Shark":
       currentData = shark;
       break;
-    case 'Dolphin':
+    case "Dolphin":
       currentData = dolphin;
       break;
-    case 'Turtle':
+    case "Turtle":
       currentData = Turtle;
       break;
-    case 'Best':
+    case "Best":
       currentData = best;
       break;
     default:
@@ -123,7 +129,10 @@ const Category = () => {
       <div className="container">
         <header className="text-center">
           <h2 className={styles.section_item__separate}>SEA LIFE</h2>
-          <Filter currentCategory={currentCategory} handleFilterClick={handleFilterClick} />
+          <Filter
+            currentCategory={currentCategory}
+            handleFilterClick={handleFilterClick}
+          />
         </header>
 
         <Slider {...sliderSettings} className={styles.slider}>
@@ -135,9 +144,9 @@ const Category = () => {
         </Slider>
       </div>
       <div className={`${styles.text_center} my-3 text-center`}>
-      <Link to="/SeaImg" className="btn btn-outline-info px-3">
-        See more
-     </Link>
+        <Link to="/SeaImg" className="btn btn-outline-info px-3">
+          See more
+        </Link>
       </div>
     </section>
   );

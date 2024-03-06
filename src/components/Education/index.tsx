@@ -1,12 +1,11 @@
 import  { useState } from 'react';
-import StarRating from "../../components/StarRating";
 import styles from "./education.module.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { education } from "../../data/education";
 import { FaCalendarDays, FaClock, FaHeartCircleCheck, FaRegHeart } from 'react-icons/fa6';
-
+import FiveStar from "../FiveStar";
 
 type EducationType = {
   id: number;
@@ -43,12 +42,12 @@ const SingleEducation = ({ education }: { education: EducationType }) => {
           <i><FaCalendarDays /></i>
           <span>{education.day}</span>
         </div>
-        <div className={`${styles.education_like} d-flex my-2`} onClick={handleLike}>
+        <div className={`${styles.education_like} d-flex `} onClick={handleLike}>
           <i><FaHeartCircleCheck /></i>
           <strong>{likeCount}</strong>
           <p>{liked ? <FaHeartCircleCheck style={{ color: 'red' }} /> : <FaRegHeart />}</p>
         </div>
-        <StarRating />
+        <FiveStar />
       </div>
     </div>
   );

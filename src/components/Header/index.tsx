@@ -8,7 +8,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../../public/images/logo.png";
 import styles from "./header.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -17,6 +17,7 @@ import { useShoppingContext } from "../../contexts/ShoppingContext";
 
 const Header = () => {
 
+  const navigate = useNavigate();
   const { cartQty } = useShoppingContext();
 
   return (
@@ -56,7 +57,7 @@ const Header = () => {
       <div className={styles.bottom_header}>
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand className={styles.logo}> <img src={Logo} alt={Logo} /> </Navbar.Brand>
+            <Navbar.Brand onClick={() => { navigate('/') }} className={styles.logo}> <img src={Logo} alt={Logo} /> </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav " />
             <Navbar.Collapse className={styles.navigation} id="basic-navbar-nav ">
               <Nav className={`${styles.title_navigation} me-auto`}>

@@ -65,6 +65,7 @@
 .bottom_header .logo {
     width: 280px;
     height: auto;
+    cursor: pointer;
 }
 .bottom_header .navigation {
     flex-grow: 0;

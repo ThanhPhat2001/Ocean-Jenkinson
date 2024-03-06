@@ -1,0 +1,43 @@
+.fivestar {
+    display: flex;
+    column-gap: 3px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.fivestar>svg {
+    font-size: 24px;
+    color: #FFA126;
+}
+/* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
+@media (max-width: 575.98px) {
+    .fivestar>svg {
+        font-size: 16px;
+    }
+    .fivestar {
+        padding-top: 5px;
+    }
+}
+/* CSS cho màn hình có độ rộng từ 576px đến 768px (ở giữa Tablet và Moblie) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .fivestar>svg {
+        font-size: 18px;
+    }
+}
+/* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .fivestar>svg {
+        font-size: 20px;
+    }
+}
+/* CSS cho màn hình có độ rộng từ 992px đến 1199px (Destop small) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .fivestar>svg {
+        font-size: 22px;
+    }
+}
+ /* CSS cho màn hình có độ rộng từ 1200px trở lên (Destop big) */
+ @media (min-width: 1200px) and (max-width: 1439.98px){
+    .fivestar>svg {
+        font-size: 22px;
+    }
+ }

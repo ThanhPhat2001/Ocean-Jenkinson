@@ -138,7 +138,7 @@
         font-size: 16px;
     }
     .top_footer .pay>ul>li:last-child>img{
-        width: auto;
+        width: 100%;
         height: auto;
     }
     .bottom_footer>p {
@@ -152,8 +152,8 @@
         font-size: 16px;
      }
     .top_footer .pay>ul>li:last-child>img {
-       width: 150px; 
-       height: 40px;
+       width: 100%; 
+       height: auto;
     }
     .top_footer .contact>ul {
         padding-left: 0px;
