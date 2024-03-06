@@ -22,7 +22,8 @@
     border-bottom: 1px solid #acacac; 
     display: flex;
     flex-direction: row;
-    padding: 16px 0px;
+    padding: 5px 0px;
+    padding-top: 10px;
     margin-bottom: 0px;
     border-radius: 20px;
     position: relative;
@@ -45,9 +46,8 @@
 .ticket_item .ticket_content {
     display: flex;
     flex-direction: column;
-    width: 290px;
     justify-content: center;
-    
+    padding-left: 20px;
 }
 .ticket_item .ticket_content>span {
     color: rgba(57,192,196,1);
@@ -94,3 +94,138 @@
     color: #012f65;
     -webkit-transition: all 700ms ease;
 }
+
+/* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
+@media (max-width: 575.98px) {
+    .main_ticket>h1 {
+        font: 700 25px / 20px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto 15px;
+        width: 50px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+    .ticket_item {
+        padding: 0px;
+    }
+    .ticket_item .ticket_content {
+       padding-top: 10px;
+       padding-left: 0px;
+    }
+    .ticket_item .ticket_name {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .ticket_item .ticket_name:first-child,
+    .ticket_item .ticket_name:nth-child(4) {
+        padding-top: 30px;
+    }
+    
+    .ticket_item .ticket_booking>a {
+        font-size: 9px;
+        padding: 7px 8px;
+    }
+    .ticket_item .ticket_content>span {
+        font-size: 12px;
+        line-height: 20px;    
+    }
+    .ticket_item .ticket_content>.ticket_age {
+        font-size: 12px;
+
+    }
+    .ticket_item .ticket_content>.ticket_required {
+        font-size: 12px;
+    }
+    .ticket_item .ticket_content>.ticket_booked {
+        font-size: 12px;
+    }
+    .ticket_item .ticket_price {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .main_ticket>h1 {
+        font: 700 30px / 25px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto 15px;
+        width: 50px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+    .ticket_item .ticket_content>span {
+        font-size: 14px;
+        line-height: 20px;    
+    }
+    .ticket_item .ticket_content>.ticket_age {
+        font-size: 14px;
+
+    }
+    .ticket_item .ticket_content>.ticket_required {
+        font-size: 14px;
+    }
+    .ticket_item .ticket_content>.ticket_booked {
+        font-size: 14px;
+    }
+    .ticket_item .ticket_booking>a {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+    .ticket_item .ticket_price {
+        text-align: center;
+        font-size: 20px;
+    }
+    .ticket_item .ticket_name {
+        padding-top: 40px;
+    }
+}
+
+
+ /* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .main_ticket>h1 {
+        font: 700 35px / 30px 'Roboto', sans-serif;
+    white-space: nowrap;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #888888;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 15px;
+    width: 50px;
+    transition: all 0.5s ease 0s;
+    color: #012f65;
+    cursor: pointer;
+    }
+    .ticket_item .ticket_booking>a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .ticket_item .ticket_price {
+        text-align: center;
+    }
+    .ticket_item .ticket_name {
+        padding-top: 40px;
+    }
+ }

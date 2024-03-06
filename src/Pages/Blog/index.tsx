@@ -1,8 +1,10 @@
 
 
 const Blog = () => {
+
+
   return (
-    <div>Blog Page</div>
+   <div className="container">Blog Page</div>
   )
 }
 

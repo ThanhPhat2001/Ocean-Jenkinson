@@ -19,8 +19,8 @@ const SingleTicket = ({ ticketItem }: { ticketItem: ticketType }) => {
 
   return (
     <div className={styles.ticket_item}>
-      <h3 className={`${styles.ticket_name} col-md-4`}>{ticketItem.name}</h3>
-      <div className={`${styles.ticket_content} col-m-4`}>
+      <h3 className={`${styles.ticket_name} col-3`}>{ticketItem.name}</h3>
+      <div className={`${styles.ticket_content} col-4`}>
         <span>
           <FaBookmark /> Available Tomorrow
         </span>
@@ -28,8 +28,8 @@ const SingleTicket = ({ ticketItem }: { ticketItem: ticketType }) => {
         <p className={styles.ticket_required}><FaTicket /> Ticket Redemption Not Required</p>
         <p className={styles.ticket_booked}><FaCheck /> {ticketItem.booked} BOOKED</p>
       </div>
-      <strong className={`${styles.ticket_price} col-md-2`}>Price: {ticketItem.price}$</strong>
-      <div className={`${styles.ticket_booking} col-md-2`}>
+      <strong className={`${styles.ticket_price} col-3`}>Price: {ticketItem.price}$</strong>
+      <div className={`${styles.ticket_booking} col-2`}>
           <a onClick={() => addCardItem(ticketItem)} href="javascript:void(0)">BOOKING</a>         
       </div>
     </div>
