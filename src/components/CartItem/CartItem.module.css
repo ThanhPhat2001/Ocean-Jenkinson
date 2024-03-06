@@ -35,3 +35,15 @@
     margin: 0px 2px;
   }
 }
+/* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .table>tbody>tr>td>.button {
+    margin: 0px 0px;
+  }
+}
+/* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .table>tbody>tr>td>.button {
+    margin: 0px 0px;
+  }
+}
