@@ -1,0 +1,295 @@
+
+.blog .title>h1 {
+    font: 700 40px / 35px 'Roboto', sans-serif;
+    white-space: nowrap;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #888888;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 15px;
+    width: 50px;
+    transition: all 0.5s ease 0s;
+    color: #012f65;
+    cursor: pointer;
+}
+.blog .title>h1:hover {
+    width: 80px;
+}
+.blog .blog_img {
+    background-color: #E2E2E4;
+    padding: 20px 0px;
+}
+
+.blog .blog_img .blog_img_title>h5 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #012f65;
+    cursor: pointer;
+}
+.blog .blog_img .blog_img_title .border_title {
+    height: 2px;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100px;
+    background-color: #EC1C24;
+}
+
+
+.blog .blog_img .blog_img_left .blog_img_one>a .img_one_img,
+.blog .blog_img .blog_img_right .blog_img_two>a .img_two_img,
+.blog .blog_img .blog_img_right .blog_img_three>a .img_three_img {
+    position: relative;
+    overflow: hidden;
+}
+.blog .blog_img .blog_img_left .blog_img_one>a .img_one_img>img,
+.blog .blog_img .blog_img_right .blog_img_two>a .img_two_img>img,
+.blog .blog_img .blog_img_right .blog_img_three>a .img_three_img>img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+.blog .blog_img .blog_img_left .blog_img_one>a .img_one_content,
+.blog .blog_img .blog_img_right .blog_img_two>a .img_two_content,
+.blog .blog_img .blog_img_right .blog_img_three>a .img_three_content {
+    position: absolute;
+    margin-top: -40px;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.blog .blog_img .blog_img_right .blog_img_two {
+margin-bottom: 5px;
+}
+.blog .blog_img .blog_img_left .blog_img_one>a .img_one_img:hover>img,
+.blog .blog_img .blog_img_right .blog_img_two>a .img_two_img:hover>img,
+.blog .blog_img .blog_img_right .blog_img_three>a .img_three_img:hover>img {
+    transform: scale(1.1);
+    transition: all 700ms ease 0s;
+}
+
+.blog_main_content .new_item {
+    padding-top: 20px;
+}
+.blog_main_content .new_item .img{
+    cursor: pointer;
+    overflow: hidden;
+}
+.blog_main_content .new_item .content .main_content_title {
+    cursor: pointer;
+    margin-top: 20px;
+}
+.blog_main_content .new_item .content .main_content_title>h3 {
+    font-size: 24px;
+    color: #012f65;
+}
+.blog_main_content .new_item .content .main_content_title:hover>h3 {
+    color: rgba(57, 192, 196, 1);
+    transition: all 400ms ease 0s;
+}
+.blog_main_content .new_item .content .main_content_content {
+    line-height: 26px;
+}
+.blog_main_content .new_item .content .main_content_content>span {
+    overflow: hidden;
+    font-size: 18px;
+}
+.blog_main_content .new_item .content .main_content_day {
+    margin-top: 20px;
+}
+.blog_main_content .new_item .content .main_content_day>p {
+    font-size: 14px;
+}
+.blog_main_content .new_item .content .main_content_more {
+    margin-top: 30px;
+}
+.blog_main_content .new_item .content .main_content_more>a {
+    font-size: 14px;
+    padding: 10px 20px;
+    background: linear-gradient(270deg, rgba(57, 192, 196, 1) 0%, rgba(18, 106, 179, 1) 100%);
+    color: #fff;
+    border-radius: 5px;
+}
+.blog_main_content .new_item .content .main_content_more>a>svg {
+    font-size: 14px;
+}
+.blog_main_content .new_item .content .main_content_more>a:hover {
+    color: #012f65;
+    transition: all 600ms ease 0s;
+    box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
+@media (max-width: 575.98px) {
+    .blog .title>h1 {
+        font: 700 25px / 20px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 30px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto 15px;
+        width: 30px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+    .blog .blog_img {
+        background-color: #E2E2E4;
+        padding: 20px 0px;
+    }
+    .blog .blog_img .blog_img_title>h5 {
+        font-size: 14px;
+    }
+    .blog .blog_img .blog_img_title .border_title {
+        max-width: 60px;
+    }
+    .blog .blog_img .blog_img_left .blog_img_one>a .img_one_img {
+        margin-bottom: 5px;
+    }
+    .blog .blog_img .blog_img_left .blog_img_one>a .img_one_img>img {
+    width: 100%;
+    height: 204px;
+    }
+    .blog .blog_img .blog_img_left .blog_img_one>a .img_one_content>span,
+    .blog .blog_img .blog_img_right .blog_img_two>a .img_two_content>span,
+    .blog .blog_img .blog_img_right .blog_img_three>a .img_three_content>span {
+        font-size: 14px;
+    }
+    .blog_main_content {
+       margin-top: 10px;
+    }
+    .blog_main_content .new_item .content .main_content_title {
+        margin-top: 10px;
+    }
+    .blog_main_content .new_item .content .main_content_title>h3 {
+        font-size: 18px;
+    }
+    .blog_main_content .new_item .content .main_content_content {
+        line-height: 18px;
+        margin-top: 0px;
+    }
+    .blog_main_content .new_item .content .main_content_content>span {
+        font-size: 14px;
+    }
+    .blog_main_content .new_item .content .main_content_day {
+        margin-top: 10px;
+    }
+    .blog_main_content .new_item .content .main_content_day>p {
+        font-size: 12px;
+    }
+    .blog_main_content .new_item .content .main_content_more {
+        margin-top: -10px;
+    }
+    .blog_main_content .new_item .content .main_content_more>a {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    .blog_main_content .new_item .content .main_content_more>a>svg {
+        font-size: 10px;
+    }
+}
+
+ /* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .blog .title>h1 {
+        font: 700 35px / 30px 'Roboto', sans-serif;
+        white-space: nowrap;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid #888888;
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px auto 15px;
+        width: 100px;
+        transition: all 0.5s ease 0s;
+        color: #012f65;
+        cursor: pointer;
+    }
+    .blog .blog_img .blog_img_title>h5 {
+        font-size: 18px;
+    }
+    .blog .blog_img .blog_img_title .border_title {
+        max-width: 100px;
+    }
+    .blog .blog_img .blog_img_left .blog_img_one>a .img_one_content>span,
+    .blog .blog_img .blog_img_right .blog_img_two>a .img_two_content>span,
+    .blog .blog_img .blog_img_right .blog_img_three>a .img_three_content>span {
+        font-size: 14px;
+    }
+    .blog_main_content .new_item .content .main_content_title {
+        margin-top: 0px;
+    }
+    .blog_main_content .new_item .content .main_content_title>h3 {
+        font-size: 18px;
+    }
+    .blog_main_content .new_item .content .main_content_content {
+        line-height: 20px;
+        margin-top: -5px;
+    }
+    .blog_main_content .new_item .content .main_content_content>span {
+        font-size: 14px;
+    }
+    .blog_main_content .new_item .content .main_content_day {
+        margin-top: 10px;
+    }
+    .blog_main_content .new_item .content .main_content_day>p {
+        font-size: 12px;
+    }
+    .blog_main_content .new_item .content .main_content_more {
+        margin-top: -10px;
+    }
+    .blog_main_content .new_item .content .main_content_more>a {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    .blog_main_content .new_item .content .main_content_more>a>svg {
+        font-size: 10px;
+    }
+ }
+
+/* CSS cho màn hình có độ rộng từ 992px đến 1199px (Destop small) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .blog_main_content .new_item .content .main_content_title {
+        margin-top: 10px;
+    }
+    .blog_main_content .new_item .content .main_content_title>h3 {
+        font-size: 22px;
+    }
+    .blog_main_content .new_item .content .main_content_content>span {
+        font-size: 16px;
+    }
+    .blog_main_content .new_item .content .main_content_day {
+        margin-top: 10px;
+    }
+    .blog_main_content .new_item .content .main_content_day>p {
+        font-size: 12px;
+    }
+    .blog_main_content .new_item .content>a {
+        padding: 8px 10px;
+    }
+    .blog_main_content .new_item .content .main_content_more {
+        margin-top: 0px;
+    }
+    .blog_main_content .new_item .content .main_content_more>a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .blog_main_content .new_item .content .main_content_more>a>svg {
+        font-size: 12px;
+    }
+}

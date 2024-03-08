@@ -70,8 +70,8 @@ const Header = () => {
                 <Nav.Link><Link to="/Ticket">
                   TICKET
                 </Link></Nav.Link>
-                <Nav.Link><Link to="/Blog">
-                  BLOG
+                <Nav.Link><Link to="/New">
+                  NEWS
                 </Link></Nav.Link>
                 <Nav.Link><Link to="/Contact">
                   CONTACT

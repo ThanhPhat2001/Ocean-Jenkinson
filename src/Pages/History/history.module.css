@@ -56,7 +56,7 @@
     .history .title>h1 {
         font: 700 25px/20px 'Roboto', sans-serif;
         white-space: nowrap;
-        line-height: 60px;
+        line-height: 30px;
         text-align: center;
         border-bottom: 2px solid #888888;
         content: "";
@@ -68,6 +68,9 @@
         transition: all 0.5s ease 0s;
         color: #012f65;
         cursor: pointer;
+    }
+    .history .content>p:first-child {
+        padding-top: 30px;
     }
     .history .background .content_background>img {
         max-width: 200px;

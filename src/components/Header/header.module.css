@@ -127,13 +127,16 @@
         display: none;
     }
     .left_top_header {
-       padding-left: 100px;
+       margin-left: 40px;
     }
     .top_header {
-        height: 30px;
+        height: 25px;
+    }
+    .top_header .left_top_header>a {
+        font-size: 12px;
     }
     .top_header .left_top_header>p {
-        font-size: 14px;
+        font-size: 11px;
         padding-top: 2px;
     }
     .bottom_header .user_action {

@@ -1,36 +1,55 @@
-import Header from "./components/Header"
-import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Blog from "./Pages/Blog";
-import Ticket from "./Pages/TicketPage";
-import Contact from "./Pages/Contact";
-import NoPage from "./Pages/NoPage";
-import Login from "./Pages/Login";
-import History from "./Pages/History";
-import CheckOut from "./Pages/CheckOut";
-import SeaImg from "./components/SeaImg";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import DefaultLayout from './components/Layouts/DefaultLayout';
+import {publicRoutes} from './data/routesList'
 import { ShoppingContextProvider } from './contexts/ShoppingContext'
+import NoPage from './Pages/NoPage'
+
+const queryClient = new QueryClient()
+
 
 const App = () => {
   return (
+    <QueryClientProvider client={queryClient}>
     <ShoppingContextProvider>
       <BrowserRouter basename="/Ocean-Jenkinson">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/ticket" element={<Ticket />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/checkout" element={<CheckOut />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-          <Route path="/SeaImg" element={<SeaImg />} /> {/* Add route for SeaImg */}
+      <Routes>
+            {
+              publicRoutes.map((route)=>{
+                const Page = route.element;
+                //Layout mặc định
+                const Layout = route.layout ? route.layout : DefaultLayout;
+                if(route.nested && route.nested.length > 0){
+                  return (
+                    <Route key={route.id} path={route.path} element={<Layout />}  >
+                        <Route index element={<Page />} />
+                        {
+                          route.nested.map((child)=> {
+                            const ChildPage = child.element;
+                            return (
+                              <Route key={child.id} path={child.path} element={<Page />}  >
+                                <Route index element={<ChildPage />} />
+                             </Route>
+                            )
+                          })
+                        }
+                    </Route>
+                  )
+                }else{
+                  return (
+                    <Route key={route.id} path={route.path} element={<Layout />}  >
+                        <Route index element={<Page />} />
+                    </Route>
+                  )
+                }
+                
+              })
+            }
+            <Route path='*' element={<NoPage />}  />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </ShoppingContextProvider>
+    </QueryClientProvider>
   )
 }
 

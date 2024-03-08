@@ -1,30 +1,13 @@
+
 import React, { useState } from 'react';
 import styles from './login.module.css'; // Import your CSS module
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS if not already imported
 
-import { FaEnvelope, FaFacebook, FaGoogle, FaHouse, FaLock, FaRegUser, FaTwitter,FaPhone } from 'react-icons/fa6';
+import { FaEnvelope, FaFacebook, FaGoogle, FaHouse, FaLock, FaRegUser, FaTwitter, FaPhone } from 'react-icons/fa6';
 
+const LoginForm = () => {
 
-
-const Login = () => {
-  const [loginVisible, setLoginVisible] = useState(true);
   const [phoneValue, setPhoneValue] = useState('');
-
-  const switchToLogin = () => {
-    const x = document.getElementById("login");
-    if (x !== null) {
-      x.style.left = "4px";
-      setLoginVisible(true);
-    }
-  };
-
-  const switchToRegister = () => {
-    const y = document.getElementById("register");
-    if (y !== null) {
-      y.style.right = "5px";
-      setLoginVisible(false);
-    }
-  };
 
   const handlePhoneInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = event.target.value;
@@ -32,53 +15,36 @@ const Login = () => {
     setPhoneValue(numericValue);
   };
 
-  const login = () => {
-    const x = document.getElementById("login");
-    const y = document.getElementById("register");
-    const a = document.getElementById("loginBtn");
-    const b = document.getElementById("registerBtn");
-
-    if (x && y && a && b) {
-      x.style.left = "4px";
-      y.style.right = "-520px";
-    
-      x.style.opacity = '1';
-      y.style.opacity = '0';
-    }
-  };
-
   const register = () => {
     const x = document.getElementById("login");
     const y = document.getElementById("register");
-    const a = document.getElementById("loginBtn");
-    const b = document.getElementById("registerBtn");
 
-    if (x && y && a && b) {
+    if (x && y) {
       x.style.left = "-510px";
       y.style.right = "5px";
-     
+
       x.style.opacity = '0';
       y.style.opacity = '1';
     }
   };
 
+  const login = () => {
+    const x = document.getElementById("login");
+    const y = document.getElementById("register");
+
+    if (x && y) {
+      x.style.left = "4px";
+      y.style.right = "-520px";
+
+      x.style.opacity = '1';
+      y.style.opacity = '0';
+    }
+  };
 
   return (
     <div className={styles.wrapper}>
-      <nav className={styles.nav}>
-        <div className={styles.nav_menu} id="navMenu"></div>
-        <div >
-          <button id="loginBtn" onClick={switchToLogin}>
-
-          </button>
-          <button  id="registerBtn" onClick={switchToRegister}>
-
-          </button>
-        </div>
-      </nav>
-
       <div className={styles.form_box}>
-        <div className={`${styles.login_container} ${loginVisible ? '' : styles.hidden}`} id="login">
+      <div className={`${styles.login_container} ${styles.login_container_visible}`} id="login">
           <header>Login</header>
           <div className={styles.input_box}>
             <input
@@ -94,7 +60,7 @@ const Login = () => {
               className={styles.input_field}
               placeholder="Password"
             />
-            <FaLock  className={styles.i}/>
+            <FaLock className={styles.i}/>
           </div>
           <div className={styles.input_box}>
             <input
@@ -124,9 +90,7 @@ const Login = () => {
           </div>
         </div>
 
-
-
-        <div className={`${styles.register_container} ${loginVisible ? styles.hidden : ''}`} id="register">
+        <div className={`${styles.register_container} ${styles.register_container_visible}`} id="register">
           <header>Sign Up</header>
           <div className={styles.two_forms}>
             <div className={styles.input_box}>
@@ -143,7 +107,7 @@ const Login = () => {
                 className={styles.input_field}
                 placeholder="LastName"
               />
-             <FaRegUser className={styles.i}/>
+              <FaRegUser className={styles.i}/>
             </div>
           </div>
           <div className={styles.input_box}>
@@ -152,7 +116,7 @@ const Login = () => {
               className={styles.input_field}
               placeholder="Email"
             />
-            <FaEnvelope  className={styles.i}/>
+            <FaEnvelope className={styles.i}/>
           </div>
           <div className={styles.input_box}>
             <input
@@ -163,7 +127,7 @@ const Login = () => {
               value={phoneValue}
               onChange={handlePhoneInputChange}
             />
-          <FaPhone  className={styles.i}/>
+            <FaPhone className={styles.i}/>
           </div>
           <div className={styles.input_box}>
             <input
@@ -179,7 +143,7 @@ const Login = () => {
               className={styles.input_field}
               placeholder="Password"
             />
-             <FaLock  className={styles.i}/>
+            <FaLock className={styles.i}/>
           </div>
           <div className={styles.input_box}>
             <input
@@ -187,7 +151,7 @@ const Login = () => {
               className={styles.input_field}
               placeholder="Confirm Password"
             />
-            <FaLock  className={styles.i}/>
+            <FaLock className={styles.i}/>
           </div>
           <div className={styles.input_box}>
             <input
@@ -214,4 +178,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;

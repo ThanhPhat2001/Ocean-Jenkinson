@@ -48,7 +48,7 @@ const Home = () => {
             </div>
             <div className={`${styles.history_more} col-4`}>
               <Link to="/History">
-                <a href="#">FIND OUT MORE !</a>
+                <a href="">FIND OUT MORE !</a>
               </Link>
             </div>
           </div>

@@ -1,0 +1,58 @@
+.NewChildrenTwo .content .title>h1 {
+    color: #012f65;
+    font-size: 32px;
+    font-weight: 600;
+}
+.NewChildrenOne .content .title {
+    margin: 20px 0px;
+}
+.NewChildrenOne .component_content .main_content>p {
+}
+.NewChildrenTwo .component_content .main_content>p>span {
+    color: #545557;
+    font-weight: 300;
+    line-height: 30px;
+}
+.NewChildrenTwo .component_content .main_content>ul{
+    margin-left: 10px;
+}
+.NewChildrenTwo .component_content .main_content>ul>li{
+    list-style: disc;
+    font-size: 20px;
+}
+.NewChildrenTwo .component_content .main_content>ul>li>a {
+    color: #f36c21;
+    font-size: 18px;
+}
+.NewChildrenTwo .component_content .main_content>ul>li>a:hover {
+    color: #f36c21;
+    text-decoration: underline;
+}
+.NewChildrenTwo .component_content .main_content>h2 {
+    color: #012f65;
+    font-weight: 500;
+    font-size: 28px;
+}   
+.NewChildrenTwo .component_content .main_content>span>img {
+    width: 100%;
+    height: auto;
+} 
+.NewChildrenTwo .popular_Blog{
+    margin-bottom: 20px;
+}
+
+/* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
+@media (max-width: 575.98px) {
+    .NewChildrenTwo .content .title>h1 {
+        font-size: 28px;
+    }
+    .NewChildrenTwo .component_content .main_content>p>span {
+       font-size: 16px;
+    }
+    .NewChildrenTwo .component_content .main_content>h2 {
+        font-size: 24px;
+    }   
+    .NewChildrenTwo .component_content .main_content>ul>li>a{
+        font-size: 16px;
+    }
+}
