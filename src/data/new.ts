@@ -1,4 +1,4 @@
-// import new_img1 from "../../public/images/blog_image4.png";
+import new_img1 from "../../public/images/blog_image4.png";
 import new_img2 from "../../public/images/blog_image_content2.jpg";
 import new_img3 from "../../public/images/blog_image_content3.jpg";
 import new_img4 from "../../public/images/blog_image5.jpg";
@@ -7,7 +7,7 @@ import new_img5 from "../../public/images/blog_image_content1.jpg";
 export const New = [
   {
     id: 1,
-    img: "../../public/images/blog_image4.png",
+    img: new_img1,
     title: "5 Ways Keeping Fish May Help Reduce Stress",
   },
   {
