@@ -19,7 +19,7 @@ type SeaImgType = {
 const SingleSeaImg = ({ SharksData }: { SharksData: SeaImgType }) => {
   return (
     <div className="col">
-      <div className="p-4">
+      <div className="p-2">
         <div className={`position-relative ${styles.item}`}>
           <div className={`${styles.thumb_oceanImg}`}>
             <img className="" src={SharksData.imageUrl} alt="" />

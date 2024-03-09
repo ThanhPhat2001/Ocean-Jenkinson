@@ -1,16 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .box_OceanImg {
-  padding: 0 75px;
+  padding: 0 75px; /* Giảm khoảng cách padding cho thiết bị di động */
   margin: 0 auto;
 }
 
 img {
-  width: 100%;
+  width: 100%; /* Sửa kích thước ảnh cho responsive */
   height: auto;
 }
 
@@ -52,7 +46,7 @@ img {
 }
 .banner_sealife img {
   width: 100%;
-  max-height: 400px;
+  max-height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -114,7 +108,7 @@ img {
   position: relative;
   top: -25px;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 8px;
   margin-bottom: 10px;
   border-radius: 50%;
   background-color: white;
@@ -139,7 +133,7 @@ img {
 
 @media (max-width: 767px) {
   .banner_sealife img {
-    max-height: 400px;
+    max-height: 500px;
   }
 
   .search_oceanImg {
@@ -170,27 +164,27 @@ img {
     margin: 0 auto;
   }
 
-  .source_SeaImg {
-    font-size: 14px;
+  .source_SeaImg p {
+    font-size: 10px;
   }
 
   .icon_Sealife {
-    font-size: 16px;
+    padding: 4px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .banner_sealife img {
-    max-height: 350px;
+    max-height: 600px;
   }
 
   .search_oceanImg {
-    width: 80%;
+    width: 80%; /* Điều chỉnh kích thước tìm kiếm trên tablet */
     bottom: 5%;
   }
 
   .slogan {
-    font-size: 16px;
+    font-size: 16px; /* Điều chỉnh kích thước font trên tablet */
     top: 30px;
   }
 
@@ -204,9 +198,9 @@ img {
     left: 0;
   }
 
-  .source_SeaImg {
+  .source_SeaImg p {
     font-size: 10px;
-    margin-bottom: -12px;
+    padding: 0 3px;
   }
 
   .icon_Sealife {
