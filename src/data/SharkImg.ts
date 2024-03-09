@@ -15,7 +15,7 @@ import Shark_Img14 from "../../public/images/SharkImg14.jpg";
 import Shark_Img15 from "../../public/images/SharkImg15.jpg";
 
 export const SharksData = [
-    {
+    { 
       id: 1,
       imageUrl: Shark_Img1,
       title: 'Whale sharks in sunlight, Triton Bay, Indonesia',
