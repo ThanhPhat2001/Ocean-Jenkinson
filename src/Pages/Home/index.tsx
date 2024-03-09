@@ -2,8 +2,8 @@ import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import Event from "../../components/Event";
 import Education from "../../components/Education";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Category from "../../components/Category";
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="history my-2">
+      <section data-aos="fade-down" className="history my-2">
         <div className="history_main  container">
           <div className="row">
             <div className="history_text col-8 ">
@@ -39,10 +39,10 @@ const Home = () => {
                   the boardwalk in Point Pleasant Beach, NJ. Since June of 1991,
                   the aquarium has been dedicated to educating the public on all
                   aspects of marine life and conservation. Each exhibit is
-                  designed to promote awareness of the animals, their habitats and
-                  conservation. We strive to provide our guests with a unique and
-                  memorable experience through creative exhibits as well as
-                  innovative educational and outreach programs...
+                  designed to promote awareness of the animals, their habitats
+                  and conservation. We strive to provide our guests with a
+                  unique and memorable experience through creative exhibits as
+                  well as innovative educational and outreach programs...
                 </p>
               </div>
             </div>

@@ -1,39 +1,44 @@
-import React from 'react';
-import styles from './filter.module.css';
+import React from "react";
+import styles from "./filter.module.css";
 
 interface FilterComponentProps {
   currentCategory: string;
   handleFilterClick: (category: string) => void;
 }
 
-const Filter: React.FC<FilterComponentProps> = ({ currentCategory, handleFilterClick }) => {
+const Filter: React.FC<FilterComponentProps> = ({
+  currentCategory,
+  handleFilterClick,
+}) => {
   return (
-    <div className={`${styles.recomend_filters} my-3 d-flex gap-3 justify-content-center flex-wrap`}>
+    <div
+      className={`${styles.recomend_filters} my-3 d-flex gap-3 justify-content-center flex-wrap`}
+    >
       <FilterButton
         category="Shark"
         currentCategory={currentCategory}
-        onClick={() => handleFilterClick('Shark')}
+        onClick={() => handleFilterClick("Shark")}
       >
         Shark
       </FilterButton>
       <FilterButton
         category="Dolphin"
         currentCategory={currentCategory}
-        onClick={() => handleFilterClick('Dolphin')}
+        onClick={() => handleFilterClick("Dolphin")}
       >
         Dolphin
       </FilterButton>
       <FilterButton
-        category="Turtle"
+        category="Whale"
         currentCategory={currentCategory}
-        onClick={() => handleFilterClick('Turtle')}
+        onClick={() => handleFilterClick("Whale")}
       >
-        Whales
+        Whale
       </FilterButton>
       <FilterButton
         category="Best"
         currentCategory={currentCategory}
-        onClick={() => handleFilterClick('Best')}
+        onClick={() => handleFilterClick("Best")}
       >
         More
       </FilterButton>
@@ -48,10 +53,17 @@ interface FilterButtonProps {
   children: React.ReactNode;
 }
 
-const FilterButton: React.FC<FilterButtonProps> = ({ category, currentCategory, onClick, children }) => {
+const FilterButton: React.FC<FilterButtonProps> = ({
+  category,
+  currentCategory,
+  onClick,
+  children,
+}) => {
   return (
     <span
-      className={`${styles.border} border py-1 px-4 ${currentCategory === category ? `${styles.current}` : ''}`}
+      className={`${styles.border} border py-1 px-4 ${
+        currentCategory === category ? `${styles.current}` : ""
+      }`}
       onClick={onClick}
     >
       {children}

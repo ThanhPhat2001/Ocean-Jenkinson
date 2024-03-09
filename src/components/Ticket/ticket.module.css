@@ -1,208 +1,212 @@
-.main_ticket>h1 {
-    font: 700 40px/35px 'Roboto', sans-serif;
-    white-space: nowrap;
-    line-height: 60px;
-    text-align: center;
-    border-bottom: 2px solid #888888;
-    content: "";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px auto 15px;
-    width: 50px;
-    transition: all 0.5s ease 0s;
-    color: #012f65;
-    cursor: pointer;
+.main_ticket > h1 {
+  font: 700 40px/35px "Roboto", sans-serif;
+  white-space: nowrap;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 2px solid #888888;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 15px;
+  width: 50px;
+  transition: all 0.5s ease 0s;
+  color: #012f65;
+  cursor: pointer;
 }
-.main_ticket>h1:hover {
-    width: 100px;
+.main_ticket > h1:hover {
+  width: 100px;
 }
 .ticket_item {
-    border-top: 1px solid #acacac;
-    border-bottom: 1px solid #acacac; 
-    display: flex;
-    flex-direction: row;
-    padding: 5px 0px;
-    padding-top: 10px;
-    margin-bottom: 0px;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: rgba(206, 210, 217, 0.38) 0px 0px 0px 0px;
-    justify-content: space-between; 
-    margin: 10px 0px;
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: rgba(206, 210, 217, 0.38) 0px 0px 0px 0px;
+  justify-content: space-between;
+  margin: 10px 0px;
 }
 
 .ticket_item .ticket_name {
-    color: rgb(15, 41, 77);
-    font-size: 20px;
-    line-height: 22px;
-    font-weight: bold;
-    font-family: PingFangSC-Medium;
-    text-align: center;
-    padding-top: 50px;
-    cursor: pointer;
+  color: rgb(15, 41, 77);
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+  font-family: PingFangSC-Medium;
+  text-align: center;
+  padding-top: 50px;
+  cursor: pointer;
 }
 
 .ticket_item .ticket_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
 }
-.ticket_item .ticket_content>span {
-    color: rgba(57,192,196,1);
-    font-size: 14px;
-    line-height: 22px;
+.ticket_item .ticket_content > span {
+  color: rgba(57, 192, 196, 1);
+  font-size: 14px;
+  line-height: 22px;
 }
-.ticket_item .ticket_content>.ticket_age {
-    font-family: Trip Geom,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    padding: 5px 0px;
+.ticket_item .ticket_content > .ticket_age {
+  font-family: Trip Geom, BlinkMacSystemFont, -apple-system, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  padding: 5px 0px;
 }
-.ticket_item .ticket_content>.ticket_required {
-    font-family: Trip Geom,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-   margin-top: -20px;
+.ticket_item .ticket_content > .ticket_required {
+  font-family: Trip Geom, BlinkMacSystemFont, -apple-system, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  margin-top: -20px;
 }
-.ticket_item .ticket_content>.ticket_booked {
-    font-family: Trip Geom,BlinkMacSystemFont,-apple-system,Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    margin-top: -15px;
+.ticket_item .ticket_content > .ticket_booked {
+  font-family: Trip Geom, BlinkMacSystemFont, -apple-system, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  margin-top: -15px;
 }
 .ticket_item .ticket_price {
-    color: rgb(15, 41, 77);
-    font-size: 24px;
-    line-height: 120px;
-    font-weight: bold;
-    cursor: pointer;
+  color: rgb(15, 41, 77);
+  font-size: 24px;
+  line-height: 120px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.ticket_item .ticket_booking>a {
-    color: #fff;
-    font-size: 15px;
-    line-height: 120px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 15px 30px;
-    border-radius: 10px;
-    background: linear-gradient( 270deg,rgba(57,192,196,1) 0%,rgba(18,106,179,1) 100%);
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    text-align: center;
+.ticket_item .ticket_booking > a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: linear-gradient(
+    270deg,
+    rgba(57, 192, 196, 1) 0%,
+    rgba(18, 106, 179, 1) 100%
+  );
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-align: center;
 }
-.ticket_item .ticket_booking>a:hover {
-    color: #012f65;
-    -webkit-transition: all 700ms ease;
+.ticket_item .ticket_booking > a:hover {
+  color: #012f65;
+  -webkit-transition: all 700ms ease;
 }
 
 /* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
 @media (max-width: 575.98px) {
-    .main_ticket>h1 {
-        font: 700 25px / 20px 'Roboto', sans-serif;
-        white-space: nowrap;
-        line-height: 60px;
-        text-align: center;
-        border-bottom: 2px solid #888888;
-        content: "";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0px auto 15px;
-        width: 50px;
-        transition: all 0.5s ease 0s;
-        color: #012f65;
-        cursor: pointer;
-    }
-    .ticket_item {
-        padding: 0px;
-    }
-    .ticket_item .ticket_content {
-       padding-top: 10px;
-       padding-left: 0px;
-    }
-    .ticket_item .ticket_name {
-        font-size: 16px;
-        padding-top: 20px;
-    }
-    .ticket_item .ticket_name:first-child,
-    .ticket_item .ticket_name:nth-child(4) {
-        padding-top: 30px;
-    }
-    
-    .ticket_item .ticket_booking>a {
-        font-size: 9px;
-        padding: 7px 8px;
-    }
-    .ticket_item .ticket_content>span {
-        font-size: 12px;
-        line-height: 20px;    
-    }
-    .ticket_item .ticket_content>.ticket_age {
-        font-size: 12px;
+  .main_ticket > h1 {
+    font: 700 25px / 20px "Roboto", sans-serif;
+    white-space: nowrap;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #888888;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 15px;
+    width: 50px;
+    transition: all 0.5s ease 0s;
+    color: #012f65;
+    cursor: pointer;
+  }
+  .ticket_item {
+    padding: 0px;
+  }
+  .ticket_item .ticket_content {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .ticket_item .ticket_name {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .ticket_item .ticket_name:first-child,
+  .ticket_item .ticket_name:nth-child(4) {
+    padding-top: 30px;
+  }
 
-    }
-    .ticket_item .ticket_content>.ticket_required {
-        font-size: 12px;
-    }
-    .ticket_item .ticket_content>.ticket_booked {
-        font-size: 12px;
-    }
-    .ticket_item .ticket_price {
-        font-size: 16px;
-        text-align: center;
-    }
+  .ticket_item .ticket_booking > a {
+    font-size: 9px;
+    padding: 7px 8px;
+  }
+  .ticket_item .ticket_content > span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ticket_item .ticket_content > .ticket_age {
+    font-size: 12px;
+  }
+  .ticket_item .ticket_content > .ticket_required {
+    font-size: 12px;
+  }
+  .ticket_item .ticket_content > .ticket_booked {
+    font-size: 12px;
+  }
+  .ticket_item .ticket_price {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 /* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
 @media (min-width: 576px) and (max-width: 767px) {
-    .main_ticket>h1 {
-        font: 700 30px / 25px 'Roboto', sans-serif;
-        white-space: nowrap;
-        line-height: 60px;
-        text-align: center;
-        border-bottom: 2px solid #888888;
-        content: "";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0px auto 15px;
-        width: 50px;
-        transition: all 0.5s ease 0s;
-        color: #012f65;
-        cursor: pointer;
-    }
-    .ticket_item .ticket_content>span {
-        font-size: 14px;
-        line-height: 20px;    
-    }
-    .ticket_item .ticket_content>.ticket_age {
-        font-size: 14px;
-
-    }
-    .ticket_item .ticket_content>.ticket_required {
-        font-size: 14px;
-    }
-    .ticket_item .ticket_content>.ticket_booked {
-        font-size: 14px;
-    }
-    .ticket_item .ticket_booking>a {
-        font-size: 12px;
-        padding: 7px 8px;
-    }
-    .ticket_item .ticket_price {
-        text-align: center;
-        font-size: 20px;
-    }
-    .ticket_item .ticket_name {
-        padding-top: 40px;
-    }
+  .main_ticket > h1 {
+    font: 700 30px / 25px "Roboto", sans-serif;
+    white-space: nowrap;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #888888;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 15px;
+    width: 50px;
+    transition: all 0.5s ease 0s;
+    color: #012f65;
+    cursor: pointer;
+  }
+  .ticket_item .ticket_content > span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ticket_item .ticket_content > .ticket_age {
+    font-size: 14px;
+  }
+  .ticket_item .ticket_content > .ticket_required {
+    font-size: 14px;
+  }
+  .ticket_item .ticket_content > .ticket_booked {
+    font-size: 14px;
+  }
+  .ticket_item .ticket_booking > a {
+    font-size: 12px;
+    padding: 7px 8px;
+  }
+  .ticket_item .ticket_price {
+    text-align: center;
+    font-size: 20px;
+  }
+  .ticket_item .ticket_name {
+    padding-top: 40px;
+  }
 }
 
-
- /* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
- @media (min-width: 768px) and (max-width: 991.98px) {
-    .main_ticket>h1 {
-        font: 700 35px / 30px 'Roboto', sans-serif;
+/* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main_ticket > h1 {
+    font: 700 35px / 30px "Roboto", sans-serif;
     white-space: nowrap;
     line-height: 60px;
     text-align: center;
@@ -216,16 +220,16 @@
     transition: all 0.5s ease 0s;
     color: #012f65;
     cursor: pointer;
-    }
-    .ticket_item .ticket_booking>a {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
+  }
+  .ticket_item .ticket_booking > a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 
-    .ticket_item .ticket_price {
-        text-align: center;
-    }
-    .ticket_item .ticket_name {
-        padding-top: 40px;
-    }
- }
+  .ticket_item .ticket_price {
+    text-align: center;
+  }
+  .ticket_item .ticket_name {
+    padding-top: 40px;
+  }
+}

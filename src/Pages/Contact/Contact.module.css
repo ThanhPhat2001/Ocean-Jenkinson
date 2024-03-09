@@ -1,166 +1,174 @@
-.contact .information .information_guest>.guest_input>h2 {
-    font-size: 24px;
-    color: #012f65;
-    font-weight: 600;
-    margin: 10px 0px;
-    text-align: center;
+.contact .information .information_guest > .guest_input > h2 {
+  font-size: 24px;
+  color: #012f65;
+  font-weight: 600;
+  margin: 10px 0px;
+  text-align: center;
 }
 
-.contact .information .information_guest .guest_input>div {
-    padding: 5px 0px;
+.contact .information .information_guest .guest_input > div {
+  padding: 5px 0px;
 }
 
-.contact .information .information_guest .guest_input .contact_guest>div {
-    padding: 5px 0px;
+.contact .information .information_guest .guest_input .contact_guest > div {
+  padding: 5px 0px;
 }
 
-.contact .information .information_guest .guest_input .contact_guest>div>input {
-    font-size: 16px;
+.contact
+  .information
+  .information_guest
+  .guest_input
+  .contact_guest
+  > div
+  > input {
+  font-size: 16px;
 }
 
-.contact .information .information_guest .guest_input .contact_guest_content>textarea {
-    font-size: 16px;
+.contact
+  .information
+  .information_guest
+  .guest_input
+  .contact_guest_content
+  > textarea {
+  font-size: 16px;
 }
 
 .contact .information .information_guest .submit {
-    margin: 15px -10px;
+  margin: 15px -10px;
 }
 
-.contact .information .information_guest .submit>button {
-    font-weight: 500;
-    padding: 5px 30px;
-    color: #fff;
-    background: linear-gradient(270deg, rgba(57, 192, 196, 1) 0%, rgba(18, 106, 179, 1) 100%);
+.contact .information .information_guest .submit > button {
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  background: linear-gradient(
+    270deg,
+    rgba(57, 192, 196, 1) 0%,
+    rgba(18, 106, 179, 1) 100%
+  );
 }
 
-.contact .information .information_guest .submit>button:hover {
-    color: #012f65;
-    -webkit-transition: all 600ms ease 0s;
-    box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0.2);
+.contact .information .information_guest .submit > button:hover {
+  color: #012f65;
+  -webkit-transition: all 600ms ease 0s;
+  box-shadow: inset 0 0 0 9rem rgba(255, 255, 255, 0.2);
 }
 
 .contact .information .information_adim .logo {
-    text-align: center;
+  text-align: center;
 }
 
-.contact .information .information_adim>ul>li {
-    padding: 5px 0px;
+.contact .information .information_adim > ul > li {
+  padding: 5px 0px;
 }
 
-.contact .information .information_adim .logo>img {
-    max-width: 200px;
-    height: auto;
+.contact .information .information_adim .logo > img {
+  max-width: 200px;
+  height: auto;
 }
 
-.contact .information .information_adim .address>span>svg,
-.contact .information .information_adim .email>span>svg,
-.contact .information .information_adim .phone>span>svg,
-.contact .information .information_adim .fax>span>svg {
-    font-size: 18px;
-    color: #012f65;
-
+.contact .information .information_adim .address > span > svg,
+.contact .information .information_adim .email > span > svg,
+.contact .information .information_adim .phone > span > svg,
+.contact .information .information_adim .fax > span > svg {
+  font-size: 18px;
+  color: #012f65;
 }
 
-.contact .information .information_adim .address>span,
-.contact .information .information_adim .email>span,
-.contact .information .information_adim .phone>span,
-.contact .information .information_adim .fax>span {
-    background: linear-gradient(270deg, rgba(57, 192, 196, 1) 0%, rgba(18, 106, 179, 1) 100%);
-    border-radius: 50%;
-    padding: 10px 15px;
+.contact .information .information_adim .address > span,
+.contact .information .information_adim .email > span,
+.contact .information .information_adim .phone > span,
+.contact .information .information_adim .fax > span {
+  background: linear-gradient(
+    270deg,
+    rgba(57, 192, 196, 1) 0%,
+    rgba(18, 106, 179, 1) 100%
+  );
+  border-radius: 50%;
+  padding: 10px 15px;
 }
 
-.contact .information .information_adim .address>p,
-.contact .information .information_adim .phone>p,
-.contact .information .information_adim .fax>p {
-    font-size: 18px;
+.contact .information .information_adim .address > p,
+.contact .information .information_adim .phone > p,
+.contact .information .information_adim .fax > p {
+  font-size: 18px;
 }
 
-.contact .information .information_adim .email>a {
-    font-size: 18px;
-    color: #000;
+.contact .information .information_adim .email > a {
+  font-size: 18px;
+  color: #000;
 }
 
 /* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
 @media (max-width: 575.98px) {
-    .contact .information .information_adim .address>span>svg,
-    .contact .information .information_adim .email>span>svg,
-    .contact .information .information_adim .phone>span>svg,
-    .contact .information .information_adim .fax>span>svg {
-        font-size: 12px;
-    }
-
-    .contact .information .information_adim .address>p,
-.contact .information .information_adim .phone>p,
-.contact .information .information_adim .fax>p
- {
+  .contact .information .information_adim .address > span > svg,
+  .contact .information .information_adim .email > span > svg,
+  .contact .information .information_adim .phone > span > svg,
+  .contact .information .information_adim .fax > span > svg {
     font-size: 12px;
- }
- .contact .information .information_adim .email>a {
+  }
+
+  .contact .information .information_adim .address > p,
+  .contact .information .information_adim .phone > p,
+  .contact .information .information_adim .fax > p {
     font-size: 12px;
-
-}
-.contact .information .information_adim .address>span,
-.contact .information .information_adim .email>span,
-.contact .information .information_adim .phone>span,
-.contact .information .information_adim .fax>span {
-
+  }
+  .contact .information .information_adim .email > a {
+    font-size: 12px;
+  }
+  .contact .information .information_adim .address > span,
+  .contact .information .information_adim .email > span,
+  .contact .information .information_adim .phone > span,
+  .contact .information .information_adim .fax > span {
     padding: 5px 10px;
-}
+  }
 }
 
 /* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
 @media (min-width: 576px) and (max-width: 767px) {
-    .contact .information .information_adim .address>p,
-    .contact .information .information_adim .phone>p,
-    .contact .information .information_adim .fax>p
-     {
-        font-size: 15px;
-     }
-     .contact .information .information_adim .address>span>svg,
-     .contact .information .information_adim .email>span>svg,
-     .contact .information .information_adim .phone>span>svg,
-     .contact .information .information_adim .fax>span>svg {
-         font-size: 15px;
-     }
-     .contact .information .information_adim .email>a {
-        font-size: 15px;
-    
-    }
-    .contact .information .information_adim .address>span,
-    .contact .information .information_adim .email>span,
-    .contact .information .information_adim .phone>span,
-    .contact .information .information_adim .fax>span {
-    
-        padding: 8px 13px;
-    }
+  .contact .information .information_adim .address > p,
+  .contact .information .information_adim .phone > p,
+  .contact .information .information_adim .fax > p {
+    font-size: 15px;
+  }
+  .contact .information .information_adim .address > span > svg,
+  .contact .information .information_adim .email > span > svg,
+  .contact .information .information_adim .phone > span > svg,
+  .contact .information .information_adim .fax > span > svg {
+    font-size: 15px;
+  }
+  .contact .information .information_adim .email > a {
+    font-size: 15px;
+  }
+  .contact .information .information_adim .address > span,
+  .contact .information .information_adim .email > span,
+  .contact .information .information_adim .phone > span,
+  .contact .information .information_adim .fax > span {
+    padding: 8px 13px;
+  }
 }
 
 /* CSS cho màn hình có độ rộng từ 992px đến 1199px (Destop small) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
-    .contact .information .information_adim .address>span>svg,
-    .contact .information .information_adim .email>span>svg,
-    .contact .information .information_adim .phone>span>svg,
-    .contact .information .information_adim .fax>span>svg {
-        font-size: 15px;
-    }
-
-    .contact .information .information_adim .address>p,
-.contact .information .information_adim .phone>p,
-.contact .information .information_adim .fax>p
- {
+  .contact .information .information_adim .address > span > svg,
+  .contact .information .information_adim .email > span > svg,
+  .contact .information .information_adim .phone > span > svg,
+  .contact .information .information_adim .fax > span > svg {
     font-size: 15px;
- }
- .contact .information .information_adim .email>a {
+  }
+
+  .contact .information .information_adim .address > p,
+  .contact .information .information_adim .phone > p,
+  .contact .information .information_adim .fax > p {
     font-size: 15px;
-
-}
-.contact .information .information_adim .address>span,
-.contact .information .information_adim .email>span,
-.contact .information .information_adim .phone>span,
-.contact .information .information_adim .fax>span {
-
+  }
+  .contact .information .information_adim .email > a {
+    font-size: 15px;
+  }
+  .contact .information .information_adim .address > span,
+  .contact .information .information_adim .email > span,
+  .contact .information .information_adim .phone > span,
+  .contact .information .information_adim .fax > span {
     padding: 8px 13px;
-}
+  }
 }

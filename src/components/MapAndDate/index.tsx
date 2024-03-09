@@ -1,7 +1,6 @@
 import styles from "./MapAndDate.module.css";
 
 const MapAndDate = () => {
-
   return (
     <section className="mb-4">
       <div className="container">

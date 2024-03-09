@@ -42,7 +42,7 @@ const Contact = () => {
                 <textarea
                   className="col-12 form-control form-control-lg"
                   placeholder="Content"
-                  rows={4} // Số dòng mặc định của textarea
+                  rows={4}
                 />
               </div>
             </div>

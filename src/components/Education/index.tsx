@@ -1,10 +1,15 @@
-import  { useState } from 'react';
-import styles from "./education.module.css"
+import { useState } from "react";
+import styles from "./education.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { education } from "../../data/education";
-import { FaCalendarDays, FaClock, FaHeartCircleCheck, FaRegHeart } from 'react-icons/fa6';
+import {
+  FaCalendarDays,
+  FaClock,
+  FaHeartCircleCheck,
+  FaRegHeart,
+} from "react-icons/fa6";
 import FiveStar from "../FiveStar";
 
 type EducationType = {
@@ -22,9 +27,9 @@ const SingleEducation = ({ education }: { education: EducationType }) => {
 
   const handleLike = () => {
     if (liked) {
-      setLikeCount(prevCount => prevCount - 1);
+      setLikeCount((prevCount) => prevCount - 1);
     } else {
-      setLikeCount(prevCount => prevCount + 1);
+      setLikeCount((prevCount) => prevCount + 1);
     }
     setLiked(!liked);
   };
@@ -35,17 +40,32 @@ const SingleEducation = ({ education }: { education: EducationType }) => {
       <div className={styles.education_content}>
         <h3>{education.title}</h3>
         <div className={styles.education_time}>
-          <i><FaClock /></i>
+          <i>
+            <FaClock />
+          </i>
           <span>{education.time}</span>
         </div>
         <div className={`${styles.education_day} my-2`}>
-          <i><FaCalendarDays /></i>
+          <i>
+            <FaCalendarDays />
+          </i>
           <span>{education.day}</span>
         </div>
-        <div className={`${styles.education_like} d-flex `} onClick={handleLike}>
-          <i><FaHeartCircleCheck /></i>
+        <div
+          className={`${styles.education_like} d-flex `}
+          onClick={handleLike}
+        >
+          <i>
+            <FaHeartCircleCheck />
+          </i>
           <strong>{likeCount}</strong>
-          <p>{liked ? <FaHeartCircleCheck style={{ color: 'red' }} /> : <FaRegHeart />}</p>
+          <p>
+            {liked ? (
+              <FaHeartCircleCheck style={{ color: "red" }} />
+            ) : (
+              <FaRegHeart />
+            )}
+          </p>
         </div>
         <FiveStar />
       </div>
@@ -66,32 +86,32 @@ const Eucation = () => {
         breakpoint: 1440,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
-        breakpoint: 992 ,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-        }
-      }
-    ]
-  }
+        },
+      },
+    ],
+  };
   return (
     <section className={`${styles.education}`}>
       <h1>Educational Programs</h1>
-      <Slider {...sliderSettings} className={`${styles.slider} container` }>
+      <Slider {...sliderSettings} className={`${styles.slider} container`}>
         {education.map((item: EducationType) => (
           <SingleEducation key={item.id} education={item} />
         ))}

@@ -1,57 +1,56 @@
-.star>label {
-    cursor: pointer;
-    transition: color 400ms; 
+.star > label {
+  cursor: pointer;
+  transition: color 400ms;
 }
-.star>label>input[type="radio"] {
-    display: none;
+.star > label > input[type="radio"] {
+  display: none;
 }
-.star>label>svg {
-    font-size: 20px;
+.star > label > svg {
+  font-size: 20px;
 }
 .hoverText {
-    padding: 5px;
-    border-radius: 2px;
-    margin-left: 10px;
-    position: relative;
-    background: #52b858;
-    color: #fff;
-    padding: 2px 8px;
-    box-sizing: border-box;
-    font-size: 16px; 
+  padding: 5px;
+  border-radius: 2px;
+  margin-left: 10px;
+  position: relative;
+  background: #52b858;
+  color: #fff;
+  padding: 2px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 .hoverText::after {
-    right: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(82,184,88,0);
-    border-right-color: #52b858;
-    border-width: 6px;
-    margin-top: -6px;
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(82, 184, 88, 0);
+  border-right-color: #52b858;
+  border-width: 6px;
+  margin-top: -6px;
 }
 /* CSS cho màn hình có độ rộng nhỏ hơn 576px (Moblie) */
 @media (max-width: 575.98px) {
-    .star>label>svg {
-        font-size: 14px;
-    }
-    .hoverText {
-        font-size: 12px; 
-    }
+  .star > label > svg {
+    font-size: 14px;
+  }
+  .hoverText {
+    font-size: 12px;
+  }
 }
 /* CSS cho màn hình có độ rộng từ 576px đến 767px (ở giữa Tablet và Moblie) */
 @media (min-width: 576px) and (max-width: 767px) {
-    .star>label>svg {
-        font-size: 18px;
-    }
-     .hoverText {
-        font-size: 16px; 
-    }
+  .star > label > svg {
+    font-size: 18px;
+  }
+  .hoverText {
+    font-size: 16px;
+  }
 }
- /* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
- @media (min-width: 768px) and (max-width: 991.98px) {
-   
- }
+/* CSS cho màn hình có độ rộng từ 769px đến 991px (ở giữ Destop Small -> Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}

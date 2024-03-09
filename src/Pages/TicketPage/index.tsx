@@ -1,11 +1,11 @@
-import Ticket from '../../components/Ticket'
+import Ticket from "../../components/Ticket";
 
 const TicketPage = () => {
   return (
     <div>
       <Ticket />
     </div>
-  )
-}
+  );
+};
 
-export default TicketPage
+export default TicketPage;

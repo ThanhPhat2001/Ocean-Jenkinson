@@ -5,7 +5,7 @@ import { FaCalendarDays, FaClock, FaEye } from "react-icons/fa6";
 import { shark } from "../../data/shark";
 import { best } from "../../data/best";
 import { dolphin } from "../../data/dolphin";
-import { Turtle } from "../../data/turtle";
+import { Whale } from "../../data/whale";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -114,8 +114,8 @@ const Category = () => {
     case "Dolphin":
       currentData = dolphin;
       break;
-    case "Turtle":
-      currentData = Turtle;
+    case "Whale":
+      currentData = Whale;
       break;
     case "Best":
       currentData = best;
@@ -128,7 +128,7 @@ const Category = () => {
     <section className={`${styles.category_item}`}>
       <div className="container">
         <header className="text-center">
-          <h2 className={styles.section_item__separate}>SEA LIFE</h2>
+          <h2 className={styles.section_item__separate}>OCEAN LIFE</h2>
           <Filter
             currentCategory={currentCategory}
             handleFilterClick={handleFilterClick}

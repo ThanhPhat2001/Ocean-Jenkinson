@@ -9,14 +9,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../../public/images/logo.png";
 import styles from "./header.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 import { useShoppingContext } from "../../contexts/ShoppingContext";
 
-
 const Header = () => {
-
   const navigate = useNavigate();
   const { cartQty } = useShoppingContext();
 
@@ -57,41 +55,61 @@ const Header = () => {
       <div className={styles.bottom_header}>
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand onClick={() => { navigate('/') }} className={styles.logo}> <img src={Logo} alt={Logo} /> </Navbar.Brand>
+            <Navbar.Brand
+              onClick={() => {
+                navigate("/");
+              }}
+              className={styles.logo}
+            >
+              {" "}
+              <img src={Logo} alt={Logo} />{" "}
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav " />
-            <Navbar.Collapse className={styles.navigation} id="basic-navbar-nav ">
+            <Navbar.Collapse
+              className={styles.navigation}
+              id="basic-navbar-nav "
+            >
               <Nav className={`${styles.title_navigation} me-auto`}>
-                <Nav.Link> <Link to="/">
-                  HOME
-                </Link></Nav.Link>
-                <Nav.Link><Link to="/History">
-                  HISTORY
-                </Link></Nav.Link>
-                <Nav.Link><Link to="/Ticket">
-                  TICKET
-                </Link></Nav.Link>
-                <Nav.Link><Link to="/New">
-                  NEWS
-                </Link></Nav.Link>
-                <Nav.Link><Link to="/Contact">
-                  CONTACT
-                </Link></Nav.Link>
+                <Nav.Link>
+                  {" "}
+                  <Link to="/">HOME</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/History">HISTORY</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/Ticket">TICKET</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/New">NEWS</Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/Contact">CONTACT</Link>
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
             <div className={styles.user_action}>
               <ul>
-                <li><Link to="/Login">
-                  <div className={styles.login}>
-                    <p><FaUserAlt /></p>
-                    <span>LOGIN</span>
-                  </div>
-                </Link></li>
-                <li><Link to="/CheckOut">
-                  <div className={styles.cart}>
-                    <p><FaShoppingCart /></p>
-                    <span>{cartQty}</span>
-                  </div>
-                </Link></li>
+                <li>
+                  <Link to="/Login">
+                    <div className={styles.login}>
+                      <p>
+                        <FaUserAlt />
+                      </p>
+                      <span>LOGIN</span>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/CheckOut">
+                    <div className={styles.cart}>
+                      <p>
+                        <FaShoppingCart />
+                      </p>
+                      <span>{cartQty}</span>
+                    </div>
+                  </Link>
+                </li>
               </ul>
             </div>
           </Container>
