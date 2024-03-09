@@ -1,3 +1,4 @@
+
 .recomend_filters span {
   transition: all 0.3s linear;
   cursor: pointer;
@@ -10,6 +11,7 @@
 .border {
   background-color: #004375;
   color: white;
+  overflow: hidden;
 }
 
 .section_item__separate {
@@ -21,21 +23,17 @@
   margin: 15px auto 0px;
   width: 60px;
   transition: all 0.5s ease 0s;
-  color: #0085b7;
+  color:#0085B7
 }
 
 .section_item__separate {
-  font: 700 30px/28px "Roboto", sans-serif;
+  font: 700 30px/28px 'Roboto', sans-serif;
   white-space: nowrap;
   line-height: 60px;
+
 }
 
 .section_item__separate:hover {
   width: 120px;
+  /* Độ dài thêm 30px so với kích thước ban đầu */
 }
-@media (max-width: 767px) {
-  * {
-       font-size: 10px; 
-      
-     }
-   }

@@ -1,12 +1,15 @@
+
 .box_OceanImg {
-  padding: 0 75px; /* Giảm khoảng cách padding cho thiết bị di động */
+   padding: 0 75px; 
   margin: 0 auto;
+  overflow: hidden;
 }
 
 img {
   width: 100%; /* Sửa kích thước ảnh cho responsive */
   height: auto;
 }
+
 
 .thumb_oceanImg {
   position: relative;
@@ -21,7 +24,7 @@ img {
   display: block;
   transition: all 0.3s linear;
 }
-.thumb_oceanImg:hover img {
+.thumb_oceanImg:hover img{
   transform: scale(1.1);
 }
 .edit_SeaImg {
@@ -42,11 +45,11 @@ img {
   opacity: 1;
 }
 .banner_sealife {
-  position: relative;
+position: relative;
 }
 .banner_sealife img {
   width: 100%;
-  max-height: 800px;
+  max-height: 800px; 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,29 +57,31 @@ img {
 }
 
 .search_oceanImg {
-  width: 80%;
-  max-width: 650px;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 7%;
-  left: 50%;
-  transform: translateX(-50%);
+width: 80%; 
+max-width: 650px; 
+margin: 0 auto; 
+position: absolute;
+bottom: 7%;
+left: 50%; 
+transform: translateX(-50%); 
+
 }
 
 .search_box {
-  width: 100%;
-  max-width: 650px;
-  height: 40px;
-  padding: 0 42px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin: 0 auto;
+width: 100%; 
+max-width: 650px; 
+height: 40px;
+padding: 0 42px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+margin: 0 auto;
+
 }
 
 .slogan {
   position: absolute;
-
+  
   color: rgb(255, 255, 255);
   font-size: 30px;
   top: 40px;
@@ -89,19 +94,22 @@ img {
   font-weight: 650;
   color: rgb(255, 255, 255);
   font-size: 18px;
+
 }
 
 .SearchImg {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 10px; 
   transform: translateY(-50%);
   font-size: 22px;
   cursor: pointer;
+
 }
 
 .search-box::placeholder {
   font-size: 18px;
+
 }
 
 .icon_Sealife {
@@ -119,92 +127,98 @@ img {
 
 @keyframes heartbeat {
   0% {
-    transform: scale(1);
+      transform: scale(1);
   }
 
   50% {
-    transform: scale(1.2);
+      transform: scale(1.2);
   }
 
   100% {
-    transform: scale(1);
+      transform: scale(1);
   }
 }
 
 @media (max-width: 767px) {
-  .banner_sealife img {
-    max-height: 500px;
-  }
+.banner_sealife img {
+  max-height: 500px;
+}
 
-  .search_oceanImg {
-    width: 70%;
-    bottom: 2%;
-  }
+.search_oceanImg {
+  width: 70%;
+  bottom: 2%;
+}
 
-  .slogan {
-    font-size: 16px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.slogan {
+  font-size: 16px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .thumb_oceanImg img {
-    width: 100%;
-    height: auto;
-  }
+.thumb_oceanImg img {
+  width: 100%;
+  height: auto;
+}
 
-  .edit_SeaImg {
-    width: 100%;
-    left: 0;
-    padding: 0 15px;
-  }
+.edit_SeaImg {
+  width: 100%;
+  left: 0;
+  padding:0 15px;
+}
 
-  .box {
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+.box {
+  padding: 0 20px; 
+  margin: 0 auto;
+}
 
-  .source_SeaImg p {
-    font-size: 10px;
-  }
+.source_SeaImg p{
+  font-size: 10px; 
+}
 
-  .icon_Sealife {
-    padding: 4px;
-  }
+.icon_Sealife  {
+  padding: 2px 5px;
+  font-size: 14px;
+}
+
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .banner_sealife img {
-    max-height: 600px;
-  }
+.banner_sealife img {
+  max-height: 600px;
+}
 
-  .search_oceanImg {
-    width: 80%; /* Điều chỉnh kích thước tìm kiếm trên tablet */
-    bottom: 5%;
-  }
+.search_oceanImg {
+  width: 80%; /* Điều chỉnh kích thước tìm kiếm trên tablet */
+  bottom: 5%;
+}
 
-  .slogan {
-    font-size: 16px; /* Điều chỉnh kích thước font trên tablet */
-    top: 30px;
-  }
+.slogan {
+  font-size: 16px; /* Điều chỉnh kích thước font trên tablet */
+  top: 30px;
+}
 
-  .thumb_oceanImg img {
-    width: 100%;
-    height: auto;
-  }
+.thumb_oceanImg img {
+  width: 100%;
+  height: auto;
+}
 
-  .edit_SeaImg {
-    width: 100%;
-    left: 0;
-  }
+.edit_SeaImg {
+  width: 100%;
+  left: 0;
 
-  .source_SeaImg p {
-    font-size: 10px;
-    padding: 0 3px;
-  }
+}
 
-  .icon_Sealife {
-    font-size: 10px;
-    margin-bottom: -12px;
-  }
+.source_SeaImg p{
+  font-size: 10px; 
+  padding:0 3px;
+}
+
+
+.icon_Sealife {
+  font-size: 14px; 
+  margin-bottom: -12px; 
+}
 }

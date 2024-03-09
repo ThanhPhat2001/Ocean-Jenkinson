@@ -2,15 +2,13 @@ import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import Event from "../../components/Event";
 import Education from "../../components/Education";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Category from "../../components/Category";
 
 const Home = () => {
-  AOS.init();
+
   return (
     <section className="home mt-2">
-      <section data-aos="zoom-in" className={styles.banner}>
+      <section className={styles.banner}>
         <div className={styles.video_banner}>
           <video
             className={styles.video}
@@ -22,7 +20,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section data-aos="fade-down" className="history my-2">
+      <section className="history my-2">
         <div className="history_main  container">
           <div className="row">
             <div className="history_text col-8 ">

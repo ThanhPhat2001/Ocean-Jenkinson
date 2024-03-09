@@ -131,7 +131,7 @@
     display: none;
   }
   .left_top_header {
-    margin-left: 40px;
+    margin-left: 0px;
   }
   .top_header {
     height: 25px;
@@ -179,6 +179,12 @@
   }
   .bottom_header .user_action > ul > li > a > .cart > span {
     margin-top: -55px;
+  }
+  .bottom_header .user_action > ul > li > a > .cart > span {
+    padding: 0px 5px;
+  }
+  .bottom_header .user_action > ul > li:last-child {
+    margin-right: 10px;
   }
 }
 
@@ -248,7 +254,7 @@
     padding-top: 2px;
   }
   .top_header .right_top_header {
-    margin-left: -160px;
+    margin-left: -195px;
   }
   .top_header .right_top_header .phone {
     font-size: 14px;

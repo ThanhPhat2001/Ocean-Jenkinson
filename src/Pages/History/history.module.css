@@ -1,3 +1,6 @@
+.history {
+  overflow: hidden;
+}
 .history .title > h1 {
   font: 700 40px/35px "Roboto", sans-serif;
   white-space: nowrap;
