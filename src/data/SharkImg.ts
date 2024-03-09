@@ -1,8 +1,21 @@
+// import Shark_Img1 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img2 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img3 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img4 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img5 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img6 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img6 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img1 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img1 from "../../public/images/SharkImg1.jpg";
+// import Shark_Img1 from "../../public/images/SharkImg1.jpg";
+
+
+
 
 export const SharksData = [
     {
       id: 1,
-      imageUrl: 'public/images/SharkImg1.jpg',
+      imageUrl: '../../public/images/SharkImg1.jpg',
       title: 'Whale sharks in sunlight, Triton Bay, Indonesia',
       source: 'Janlue',
     },
