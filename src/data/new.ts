@@ -1,4 +1,4 @@
-import new_img1 from "../../public/images/blog_image_content4.png";
+import new_img1 from "../../public/images/blog_image3.jpg";
 import new_img2 from "../../public/images/blog_image_content2.jpg";
 import new_img3 from "../../public/images/blog_image_content3.jpg";
 import new_img4 from "../../public/images/blog_image5.jpg";
