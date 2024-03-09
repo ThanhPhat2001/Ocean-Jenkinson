@@ -132,6 +132,7 @@
   }
   .left_top_header {
     margin-left: 0px;
+    padding-left: 65px;
   }
   .top_header {
     height: 25px;
@@ -254,7 +255,7 @@
     padding-top: 2px;
   }
   .top_header .right_top_header {
-    margin-left: -195px;
+    margin-left: -165px;
   }
   .top_header .right_top_header .phone {
     font-size: 14px;
